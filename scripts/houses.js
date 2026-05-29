@@ -1,6 +1,6 @@
 let houses = [];
 
-fetch("houses.json")
+fetch("../data/houses.json")
   .then(r => r.json())
   .then(data => {
     houses = data;

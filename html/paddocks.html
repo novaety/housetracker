@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Recherche d'enclos</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🔎 Recherche d'enclos</h1>
+
+    <!-- ===================== -->
+    <!-- 📍 RECHERCHE POSITION -->
+    <!-- ===================== -->
+    <h3>Recherche par position</h3>
+
+    <input type="number" id="xSearch" placeholder="X">
+    <input type="number" id="ySearch" placeholder="Y">
+
+    <button onclick="searchPaddockByPosition()">
+      Rechercher position
+    </button>
+
+    <!-- ===================== -->
+    <!-- 🏴 RECHERCHE GUILDE -->
+    <!-- ===================== -->
+    <h3>Recherche par guilde</h3>
+
+    <input type="text" id="guildSearch" placeholder="Nom de guilde">
+
+    <button onclick="searchPaddockByGuild()">
+      Rechercher guilde
+    </button>
+
+    <div id="list"></div>
+    <div id="details"></div>
+
+  </div>
+
+  <script src="../scripts/paddocks.js" defer></script>
+
+</body>
+
+</html>

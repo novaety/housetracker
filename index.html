@@ -4,30 +4,13 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-  <title>Recherche de maisons</title>
+  <title>Tracking Enclos et Maisons</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Recherche de maison</h1>
-
-        <h3>Recherche par ID</h3>
-        <input id="idSearch" type="number" placeholder="ID de la maison">
-        <button onclick="searchById()">Rechercher ID</button>
-
-        <h3>Recherche par position</h3>
-        <input id="xSearch" type="number" placeholder="X">
-        <input id="ySearch" type="number" placeholder="Y">
-        <button onclick="searchByPosition()">Rechercher position</button>
-
-        <h3>Recherche par pseudo</h3>
-        <input id="playerSearch" type="text" placeholder="Pseudo joueur..." oninput="searchByPlayer()">
-
-        <div id="list"></div>
-        <div id="details"></div>
-    </div>
-
-  <script src="scripts/script.js" defer></script>
-
+  <div class="container">
+    <a class="btn-index" href="html/houses.html">Recherche de Maisons</a>
+    <a class="btn-index" href="html/paddocks.html">Recherche d'Enclos</a>
+  </div>
 </body>
 </html>

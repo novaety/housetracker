@@ -67,7 +67,7 @@ button:hover {
 
 /* détails */
 #details {
-  width: 560px;
+  width: 600px;
   margin-top: 20px;
   background: white;
   padding: 0px;
@@ -166,4 +166,24 @@ button:hover {
 
 .house-details tr:nth-child(odd) {
   background-color: #dfdfdf;
+}
+
+.btn-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn-index:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
