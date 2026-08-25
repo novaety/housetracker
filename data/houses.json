@@ -74,14 +74,14 @@
     "lieu":"BRAKMAR",
     "position":"[-28, 31]",
     "nom":"Moyenne maison de Brakmar",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2500000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"Raping#9702",
-    "proprietaire_2":"-aron-#5954",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":7,
@@ -163,7 +163,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"BOULANGER",
-    "proprietaire_1":"nrnkgknuab#8131",
+    "proprietaire_1":"Itadori#6007",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -177,7 +177,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"BOULANGER",
-    "proprietaire_1":"FTNgogo#5089",
+    "proprietaire_1":"Teamelevage#4091",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -205,9 +205,9 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Cleaus#2570",
+    "proprietaire_1":"charlot59570#8017",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":16,
@@ -219,9 +219,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"lakhmailosse#8489",
+    "proprietaire_1":"2314#3750",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":17,
@@ -291,7 +291,7 @@
     "atelier":"BOUCHER",
     "proprietaire_1":"PUISSANT-TELEPATHE#9123",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":22,
@@ -318,7 +318,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"sebaslort#1564",
-    "proprietaire_2":"missVermy#5908",
+    "proprietaire_2":"etoiledumonde#8117",
     "guilde":null
   },
   {
@@ -487,7 +487,7 @@
     "atelier":"NON",
     "proprietaire_1":"sebastianreyes12#6634",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":36,
@@ -527,7 +527,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"BOULANGER",
-    "proprietaire_1":"linaresh#1831",
+    "proprietaire_1":"escobaar78#3038",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -542,7 +542,7 @@
     "nb_coffres":1,
     "atelier":"BOULANGER",
     "proprietaire_1":"Nuclear-explosif#6467",
-    "proprietaire_2":"bingo-2-cent-50-k#1948",
+    "proprietaire_2":"ClefdediX#9666",
     "guilde":null
   },
   {
@@ -557,7 +557,7 @@
     "atelier":"BOULANGER",
     "proprietaire_1":"--Reyzoo--#8509",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":41,
@@ -627,7 +627,7 @@
     "atelier":"FORGERON",
     "proprietaire_1":"karen#8501",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":46,
@@ -751,9 +751,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"mamasdof#7606",
+    "proprietaire_1":"bonaster#5854",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":55,
@@ -779,9 +779,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Fadoli15#5024",
+    "proprietaire_1":"NTXX1#5826",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":57,
@@ -891,7 +891,7 @@
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"BRICOLEUR",
-    "proprietaire_1":"rarasaiben#9142",
+    "proprietaire_1":"tarkaneee#2384",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -1073,7 +1073,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"TAILLEUR",
-    "proprietaire_1":"Jahlovehhot#6992",
+    "proprietaire_1":"kkoKookOkoKO#7835",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -1115,9 +1115,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Fzonatto#8220",
+    "proprietaire_1":"tempseven#1636",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":81,
@@ -1187,7 +1187,7 @@
     "atelier":"FORGERON",
     "proprietaire_1":"fredimi#7747",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":86,
@@ -1213,7 +1213,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"felipe-one#5480",
+    "proprietaire_1":"yamada-nulo#3151",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -1241,7 +1241,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"sir-meranelllo#6808",
+    "proprietaire_1":"Newlight#5113",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -1299,7 +1299,7 @@
     "atelier":"NON",
     "proprietaire_1":"o-trash#6985",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":94,
@@ -1354,7 +1354,7 @@
     "nb_coffres":5,
     "atelier":"BRICOLEUR",
     "proprietaire_1":"Rijcra#7788",
-    "proprietaire_2":"Boxeurs#6086",
+    "proprietaire_2":"Dolted-cra#9589",
     "guilde":null
   },
   {
@@ -1404,14 +1404,14 @@
     "lieu":"BRAKMAR",
     "position":"[-28, 36]",
     "nom":"Moyenne maison de Brakmar",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2500000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"TellmeMirage#3390",
-    "proprietaire_2":"-DaPima-#7895",
-    "guilde":null
+    "proprietaire_1":"-DaPima-#7895",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":102,
@@ -1451,9 +1451,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"kettiiy#4843",
+    "proprietaire_1":"Death-mortal-Xx#6433",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":105,
@@ -1465,9 +1465,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ChocolateCaramelo#7621",
+    "proprietaire_1":"robynle#4587",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":106,
@@ -1480,7 +1480,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"TeekZohleNarvalo#9515",
-    "proprietaire_2":"-xXx-OXIS-xXx-#5294",
+    "proprietaire_2":"thecra111#7393",
     "guilde":null
   },
   {
@@ -1507,9 +1507,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"sangrientopvp#5123",
+    "proprietaire_1":"Giltones#2485",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":109,
@@ -1521,7 +1521,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"DAKOGA#1542",
+    "proprietaire_1":"Narutchi142#8673",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -1550,7 +1550,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"RioDeLagrimas#2686",
-    "proprietaire_2":"MissEvy#6275",
+    "proprietaire_2":"sadida#4405",
     "guilde":null
   },
   {
@@ -1605,7 +1605,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"mateo-oc#8280",
+    "proprietaire_1":"abdelali#5009",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -1647,9 +1647,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"miaiufg#3376",
+    "proprietaire_1":"Twolololololololz02#9805",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":119,
@@ -1675,9 +1675,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"alientheorie#7693",
+    "proprietaire_1":"logistic#5124",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":121,
@@ -1717,7 +1717,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"SCULPTEUR",
-    "proprietaire_1":"Fecoutte#5939",
+    "proprietaire_1":"--iHso--#8555",
     "proprietaire_2":"flip-flopbox#5108",
     "guilde":null
   },
@@ -1747,7 +1747,7 @@
     "atelier":"SCULPTEUR",
     "proprietaire_1":"baboss-maximatoreeee#8964",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":126,
@@ -1774,7 +1774,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"remyrominon#7956",
-    "proprietaire_2":"Misscra#4729",
+    "proprietaire_2":"haaziel#4839",
     "guilde":null
   },
   {
@@ -1787,9 +1787,9 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"StarCrusaders#7595",
+    "proprietaire_1":"skrm#4922",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":129,
@@ -1829,7 +1829,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Dudinsky#8559",
+    "proprietaire_1":"vergulliver#5519",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -1955,9 +1955,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"SIETE-MAJE#2833",
+    "proprietaire_1":"petiteVadrouille#9105",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":141,
@@ -2263,7 +2263,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Jtefaisdeco#4603",
+    "proprietaire_1":"Mousstik#1492",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -2319,9 +2319,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Nadie-me-tumba#7712",
+    "proprietaire_1":"Oslo93#3812",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":167,
@@ -2361,9 +2361,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"principale001#6186",
+    "proprietaire_1":"Arnotovic#2271",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":170,
@@ -2375,7 +2375,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Adrien1406#6581",
+    "proprietaire_1":"susu#8517",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -2404,7 +2404,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"womensfirst555#2106",
-    "proprietaire_2":"Mywiffe#3844",
+    "proprietaire_2":"ifyouknow555#7162",
     "guilde":null
   },
   {
@@ -2459,9 +2459,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Angytaiwana#3204",
+    "proprietaire_1":"Riiku#6482",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":177,
@@ -2501,7 +2501,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"larbrutuszwei#8604",
+    "proprietaire_1":"dontkickme#3957",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -2529,9 +2529,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"erageiith#8173",
+    "proprietaire_1":"abcd#4159",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":182,
@@ -2613,7 +2613,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"electro-scram#5588",
+    "proprietaire_1":"Diiamond-Tharos#1703",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -2627,7 +2627,7 @@
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"BIJOUTIER",
-    "proprietaire_1":"Ink#7365",
+    "proprietaire_1":"OothekingiopoO#8644",
     "proprietaire_2":"I-Frodon-I#3718",
     "guilde":null
   },
@@ -2685,7 +2685,7 @@
     "atelier":"NON",
     "proprietaire_1":"hugomaggot#3729",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":193,
@@ -2697,9 +2697,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"partner#2294",
+    "proprietaire_1":"polloyverdura#9044",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":194,
@@ -2740,7 +2740,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"Ragnarok#3504",
-    "proprietaire_2":"je----re#1464",
+    "proprietaire_2":"Retsu#4557",
     "guilde":null
   },
   {
@@ -2767,7 +2767,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"yururueiru#3845",
+    "proprietaire_1":"asfadgdg#2232",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -2781,9 +2781,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Rory-Tre#4097",
+    "proprietaire_1":"arvetmebin#9530",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":200,
@@ -2804,14 +2804,14 @@
     "lieu":"BONTA",
     "position":"[-33, -60]",
     "nom":"Moyenne maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2500000,
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"hrafbabyboi#5343",
-    "proprietaire_2":"lol4000#6681",
-    "guilde":null
+    "proprietaire_1":"lol4000#6681",
+    "proprietaire_2":null,
+    "guilde":"n"
   },
   {
     "id":202,
@@ -3042,14 +3042,14 @@
     "lieu":"BONTA",
     "position":"[-29, -61]",
     "nom":"Moyenne maison de Sculpteur",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"sammychoupinoupinette#1495",
-    "proprietaire_2":"el-chata#7961",
-    "guilde":null
+    "proprietaire_1":"777#8571",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":219,
@@ -3196,13 +3196,13 @@
     "lieu":"BONTA",
     "position":"[-28, -60]",
     "nom":"Grande maison de Sculpteur",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":4000000,
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"SCULPTEUR",
     "proprietaire_1":"jean159753123#7883",
-    "proprietaire_2":"Roxxxxxxxxx#5926",
+    "proprietaire_2":null,
     "guilde":null
   },
   {
@@ -3243,9 +3243,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"neww-piegee#6969",
+    "proprietaire_1":"fermaeorico#4524",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":233,
@@ -3271,7 +3271,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Elite-killer-Tj-ox#3692",
+    "proprietaire_1":"KaedechanRiven#4668",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -3285,7 +3285,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"kibou#5443",
+    "proprietaire_1":"BoudalfLeBoss#6963",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -3350,14 +3350,14 @@
     "lieu":"BONTA",
     "position":"[-29, -59]",
     "nom":"Tres petite maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Miki-Wonka#6841",
-    "proprietaire_2":"Ombrox#8259",
-    "guilde":null
+    "proprietaire_1":"Ombrox#8259",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":241,
@@ -3369,7 +3369,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"maxgir#8745",
+    "proprietaire_1":"boublux1000#7599",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -3425,9 +3425,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"SCULPTEUR",
-    "proprietaire_1":"twit-wy#4938",
+    "proprietaire_1":"Naabish#1682",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":246,
@@ -3481,9 +3481,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"mamadosako#6147",
+    "proprietaire_1":"Jara-II#1583",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":250,
@@ -3523,7 +3523,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"reroll4#8819",
+    "proprietaire_1":"lecradeshlagusenfin#3854",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -3747,9 +3747,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"--SoK--#9495",
+    "proprietaire_1":"Toniloko#7530",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":269,
@@ -3763,7 +3763,7 @@
     "atelier":"NON",
     "proprietaire_1":"heesiodee#8557",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":270,
@@ -3791,7 +3791,7 @@
     "atelier":"NON",
     "proprietaire_1":"X-KOKS-X#3034",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":272,
@@ -3957,9 +3957,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Royalboss#5472",
+    "proprietaire_1":"kasa-seis#1662",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":284,
@@ -4111,9 +4111,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"forge111#5759",
+    "proprietaire_1":"Mizoreshi#6162",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":295,
@@ -4195,7 +4195,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Ezio-Aodittorai#7848",
+    "proprietaire_1":"Lord-VampireDk#1506",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -4251,9 +4251,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"xN3V3R#9886",
+    "proprietaire_1":"I-Predators-I#3468",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":305,
@@ -4321,9 +4321,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"elshacoss#3521",
+    "proprietaire_1":"sldekr#5540",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":310,
@@ -4336,7 +4336,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"MrBNo#5402",
-    "proprietaire_2":"Rory-Do#4309",
+    "proprietaire_2":"Sabalii#6419",
     "guilde":null
   },
   {
@@ -4349,9 +4349,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"purple-pills#7433",
+    "proprietaire_1":"KOKO-ONE#3214",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":312,
@@ -4365,7 +4365,7 @@
     "atelier":"NON",
     "proprietaire_1":"kichi94#8923",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":313,
@@ -4476,7 +4476,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"-Elite-Player-#6930",
-    "proprietaire_2":"FSgemeenteschoten#2860",
+    "proprietaire_2":"jellersimikos#5823",
     "guilde":null
   },
   {
@@ -4489,7 +4489,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"aprolx#2137",
+    "proprietaire_1":"TRAICIONERA#9138",
     "proprietaire_2":"Parz#3601",
     "guilde":null
   },
@@ -4504,7 +4504,7 @@
     "nb_coffres":1,
     "atelier":"FORGERON",
     "proprietaire_1":"wakyeretour#9937",
-    "proprietaire_2":"Rory-Cu#3635",
+    "proprietaire_2":"gilp#1769",
     "guilde":null
   },
   {
@@ -4657,9 +4657,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"Bang#1554",
+    "proprietaire_1":"Matrez#6403",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":334,
@@ -4685,7 +4685,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"vampireangeless#3175",
+    "proprietaire_1":"Somoran#3433",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -4699,9 +4699,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"remortifax#8498",
+    "proprietaire_1":"Capri-suuun#3388",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":337,
@@ -4713,9 +4713,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"idandleur#5499",
+    "proprietaire_1":"Spidou7#5995",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":338,
@@ -4755,9 +4755,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"Badxebi#5606",
+    "proprietaire_1":"Champivon#4799",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":341,
@@ -4811,7 +4811,7 @@
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"FORGERON",
-    "proprietaire_1":"MAHCNER-IOP#8344",
+    "proprietaire_1":"Dpr-Ebene#8458",
     "proprietaire_2":"tchek7#2356",
     "guilde":null
   },
@@ -4839,9 +4839,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Zlul#1384",
+    "proprietaire_1":"TheQueen#6183",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":347,
@@ -4890,14 +4890,14 @@
     "lieu":"BONTA",
     "position":"[-27, -54]",
     "nom":"Moyenne maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2500000,
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Toto-Diablo#7973",
-    "proprietaire_2":"izii59#4548",
-    "guilde":null
+    "proprietaire_1":"izii59#4548",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":351,
@@ -4918,14 +4918,14 @@
     "lieu":"BONTA",
     "position":"[-27, -54]",
     "nom":"Tres petite maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"lian-ocraa#9937",
-    "proprietaire_2":"Lefarmeurfou#9222",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":353,
@@ -4951,9 +4951,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"FORGERON",
-    "proprietaire_1":"-Ocarina-#3392",
+    "proprietaire_1":"-xXx-OXIS-xXx-#5294",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":355,
@@ -4981,7 +4981,7 @@
     "atelier":"NON",
     "proprietaire_1":"La-mariina#6710",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":357,
@@ -5105,7 +5105,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Narcissanne#5355",
+    "proprietaire_1":"Ya-e#1026",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -5147,7 +5147,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Xelo-rious#1500",
+    "proprietaire_1":"Ymk-G#8580",
     "proprietaire_2":"numberoneeeeeeeeeeeee#1409",
     "guilde":null
   },
@@ -5254,14 +5254,14 @@
     "lieu":"BONTA",
     "position":"[-31, -55]",
     "nom":"Moyenne maison de Tailleur",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"unpownedAcc#9600",
-    "proprietaire_2":"Dragula#7983",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":377,
@@ -5567,9 +5567,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"pousle#1734",
+    "proprietaire_1":"Soto#2661",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":399,
@@ -5581,9 +5581,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"samueldunord2#8715",
+    "proprietaire_1":"DOFRET1#2922",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":400,
@@ -5679,9 +5679,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"vivilandia#3389",
+    "proprietaire_1":"Germa-66#2851",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":407,
@@ -5737,7 +5737,7 @@
     "atelier":"BOUCHER",
     "proprietaire_1":"maltillosecs#4282",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":411,
@@ -5861,7 +5861,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"jellersimikos#5823",
+    "proprietaire_1":"Oceanblue#5904",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -5875,9 +5875,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"cash-zero#9268",
+    "proprietaire_1":"uiu#6481",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":421,
@@ -5945,7 +5945,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"anjanath#9145",
+    "proprietaire_1":"paslapouretrela#9976",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -6010,14 +6010,14 @@
     "lieu":"BONTA",
     "position":"[-29, -52]",
     "nom":"Gigantesque maison de Boulanger",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":5000000,
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"BOULANGER",
-    "proprietaire_1":"McLaren-----------------#1440",
-    "proprietaire_2":"Lahialovelove#2464",
-    "guilde":null
+    "proprietaire_1":"Lahialovelove#2464",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":431,
@@ -6029,9 +6029,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"azfzafza#6600",
+    "proprietaire_1":"Lander#2738",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":432,
@@ -6127,7 +6127,7 @@
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"BOULANGER",
-    "proprietaire_1":"MAHCNER-ENI#3881",
+    "proprietaire_1":"Homes#2223",
     "proprietaire_2":"Oo--starboss--oO#6562",
     "guilde":null
   },
@@ -6240,7 +6240,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"Badrette#3894",
-    "proprietaire_2":"Heaven-yop#5838",
+    "proprietaire_2":"hunter-joliano#9992",
     "guilde":null
   },
   {
@@ -6253,9 +6253,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ryckemlory#7494",
+    "proprietaire_1":"-FrTom-#9381",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":448,
@@ -6323,7 +6323,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"owzyqszmgf#7624",
+    "proprietaire_1":"Akaza#1076",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -6379,9 +6379,9 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"raji#3605",
+    "proprietaire_1":"ice-Ballll#2410",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":457,
@@ -6408,7 +6408,7 @@
     "nb_coffres":2,
     "atelier":"BOULANGER",
     "proprietaire_1":"darkxhite#8324",
-    "proprietaire_2":"white--wedo#3823",
+    "proprietaire_2":"DrevenZ#8717",
     "guilde":null
   },
   {
@@ -6430,14 +6430,14 @@
     "lieu":"BONTA",
     "position":"[-27, -51]",
     "nom":"Petite maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Blabadouap#1300",
-    "proprietaire_2":"darkwaldik#6535",
-    "guilde":null
+    "proprietaire_1":"Alpha-Gz#2530",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":461,
@@ -6519,7 +6519,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Derniere-fois--#3248",
+    "proprietaire_1":"Mywiffe#3844",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -6561,7 +6561,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Benossss#4863",
+    "proprietaire_1":"bouger#5036",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -6813,7 +6813,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Sergio#1407",
+    "proprietaire_1":"MasterBaiter#9744",
     "proprietaire_2":"elevage02#3415",
     "guilde":null
   },
@@ -6869,7 +6869,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"hautdeseine92i#5738",
+    "proprietaire_1":"orrrranor#9803",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -6892,14 +6892,14 @@
     "lieu":"BONTA",
     "position":"[-33, -50]",
     "nom":"Grande maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Ganja-Brain#9756",
-    "proprietaire_2":"neteiana#2893",
-    "guilde":null
+    "proprietaire_1":"maison-de-Lblayriya#8482",
+    "proprietaire_2":null,
+    "guilde":"n"
   },
   {
     "id":494,
@@ -6920,14 +6920,14 @@
     "lieu":"BONTA",
     "position":"[-33, -50]",
     "nom":"Grande maison de Boucher",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":4000000,
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"BOUCHER",
-    "proprietaire_1":"khikhikhi#3547",
-    "proprietaire_2":"-le-bart-mille-#3734",
-    "guilde":null
+    "proprietaire_1":"-le-bart-mille-#3734",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":496,
@@ -6948,14 +6948,14 @@
     "lieu":"BONTA",
     "position":"[-34, -50]",
     "nom":"Grande maison de Boucher",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":4000000,
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"BOUCHER",
-    "proprietaire_1":"buitk#9981",
-    "proprietaire_2":"droops-Manster#8815",
-    "guilde":null
+    "proprietaire_1":"droops-Manster#8815",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":498,
@@ -7051,9 +7051,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"MrGoodthings#2998",
+    "proprietaire_1":"cerecita#4055",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":505,
@@ -7079,23 +7079,23 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"verimo#8498",
+    "proprietaire_1":"jojoleplusfort#1090",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":507,
     "lieu":"BONTA",
     "position":"[-37, -51]",
     "nom":"Moyenne maison de Bonta",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2500000,
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"triktriktrik#6571",
-    "proprietaire_2":"hitay#2364",
-    "guilde":null
+    "proprietaire_1":"ankoudabest#7836",
+    "proprietaire_2":null,
+    "guilde":"n"
   },
   {
     "id":508,
@@ -7107,7 +7107,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Naabish#1682",
+    "proprietaire_1":"Gold-Saint#6600",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -7178,7 +7178,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"temp-sacri#1480",
-    "proprietaire_2":"-Syrup-#7666",
+    "proprietaire_2":"XxX-pruple-Drank-XxX#9828",
     "guilde":null
   },
   {
@@ -7415,7 +7415,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Kayman#2079",
+    "proprietaire_1":"Saotchi-37#3072",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -7466,14 +7466,14 @@
     "lieu":"VILLAGE COTIER",
     "position":"[-45, 17]",
     "nom":"Petite Paillote",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ENIRVANA#7003",
-    "proprietaire_2":"graouuuuuuutch#7264",
-    "guilde":null
+    "proprietaire_1":"graouuuuuuutch#7264",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":535,
@@ -7555,7 +7555,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ankoudabest#7836",
+    "proprietaire_1":"OISHEM#7128",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -7669,21 +7669,21 @@
     "atelier":"NON",
     "proprietaire_1":"Ladyex#9711",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":549,
     "lieu":"VILLAGE COTIER",
     "position":"[-46, 19]",
     "nom":"Petite Paillote",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"cra2#6303",
-    "proprietaire_2":"annacasenove#9632",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":550,
@@ -7709,7 +7709,7 @@
     "nb_pieces":1,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Shekina#7675",
+    "proprietaire_1":"jive#9260",
     "proprietaire_2":"Fryaksix#5577",
     "guilde":null
   },
@@ -7765,7 +7765,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"PremierRatatouille#9614",
+    "proprietaire_1":"Eszra#6048",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -7793,7 +7793,7 @@
     "nb_pieces":1,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"roxytitali#9124",
+    "proprietaire_1":"Tymplar#4274",
     "proprietaire_2":"Plouc-shaft#4107",
     "guilde":null
   },
@@ -7905,7 +7905,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Sobre-Cra#3381",
+    "proprietaire_1":"katritos#7688",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -7921,7 +7921,7 @@
     "atelier":"NON",
     "proprietaire_1":"Trafalgar-Tuk-Sept-Quatre#4543",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":567,
@@ -7934,7 +7934,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"Pandette-Rouge#9973",
-    "proprietaire_2":"amyn#4214",
+    "proprietaire_2":"unagi-lafafa#7758",
     "guilde":null
   },
   {
@@ -7948,7 +7948,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"Lmadasquirtlee#2944",
-    "proprietaire_2":"SOK#9157",
+    "proprietaire_2":"Gro-chateu-foreveur#7182",
     "guilde":null
   },
   {
@@ -7975,7 +7975,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"yopepette#9648",
+    "proprietaire_1":"boublux8000#8834",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -8003,7 +8003,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"edvili-#6346",
+    "proprietaire_1":"stiboul-51#9089",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8115,7 +8115,7 @@
     "nb_pieces":4,
     "nb_coffres":5,
     "atelier":"NON",
-    "proprietaire_1":"Natouchy#3237",
+    "proprietaire_1":"Gabonga#3237",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8138,14 +8138,14 @@
     "lieu":"VILLAGE DES ELEVEURS",
     "position":"[-55, 6]",
     "nom":"Luxueuse maison d'eleveur",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":8000000,
     "nb_pieces":5,
     "nb_coffres":6,
     "atelier":"NON",
     "proprietaire_1":"-Disciple-#1795",
-    "proprietaire_2":"vicoudelyon#4159",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":583,
@@ -8199,7 +8199,7 @@
     "nb_pieces":5,
     "nb_coffres":6,
     "atelier":"NON",
-    "proprietaire_1":"fortunenumbersix#2558",
+    "proprietaire_1":"reyreysisi#6866",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8367,7 +8367,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Skghfsdf5#5987",
+    "proprietaire_1":"HanDynasty#3762",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8409,7 +8409,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"azertydidier#7055",
+    "proprietaire_1":"Callin-crato#7988",
     "proprietaire_2":"anegl56110#5074",
     "guilde":null
   },
@@ -8423,7 +8423,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"SANG-DAR#6285",
+    "proprietaire_1":"facexf#4695",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8577,7 +8577,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Flawlesss#3509",
+    "proprietaire_1":"amaurytempo#2475",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8605,7 +8605,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"-Eniripsa-#3050",
+    "proprietaire_1":"j-l-g-x#3990",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8647,7 +8647,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"mimosafleuri#5342",
+    "proprietaire_1":"5723355565#2664",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8705,7 +8705,7 @@
     "atelier":"NON",
     "proprietaire_1":"lens-om#4111",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":623,
@@ -8759,7 +8759,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"yenyeter#9546",
+    "proprietaire_1":"aefg#1787",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8801,7 +8801,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"lospadrinitos#8094",
+    "proprietaire_1":"KwakZeQLF#4667",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -8815,9 +8815,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Marcko-ll#5854",
+    "proprietaire_1":"Melyduvar#3941",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":631,
@@ -8859,7 +8859,7 @@
     "atelier":"NON",
     "proprietaire_1":"Jojtecoupe#6613",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":634,
@@ -8887,7 +8887,7 @@
     "atelier":"NON",
     "proprietaire_1":"zino-du90#5871",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":636,
@@ -8914,7 +8914,7 @@
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"-Valhalla-#5648",
-    "proprietaire_2":"RASTAPANDA#3274",
+    "proprietaire_2":"1olilouol#2173",
     "guilde":null
   },
   {
@@ -9025,7 +9025,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"LyN-Thiewy#3955",
+    "proprietaire_1":"loriesetera#2035",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9076,14 +9076,14 @@
     "lieu":"VILLAGE DE LA CANOPEE",
     "position":"[-52, 20]",
     "nom":"Moyenne maison Hakam",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
     "proprietaire_1":"THEZENT#4887",
-    "proprietaire_2":"oiuoui#7438",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":650,
@@ -9137,9 +9137,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Elaphone#2859",
+    "proprietaire_1":"clementlemouton#7783",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":654,
@@ -9151,7 +9151,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"didisolide4#1401",
+    "proprietaire_1":"Paraphe#3934",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9207,9 +9207,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"retro1#4175",
+    "proprietaire_1":"boublux7000#6639",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":659,
@@ -9305,7 +9305,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"glouglouglaglou#1192",
+    "proprietaire_1":"InahoFAX#5867",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9321,7 +9321,7 @@
     "atelier":"NON",
     "proprietaire_1":"niniropi#5961",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":667,
@@ -9335,7 +9335,7 @@
     "atelier":"NON",
     "proprietaire_1":"inex-binsa2#8328",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":668,
@@ -9347,7 +9347,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Kudero91#9512",
+    "proprietaire_1":"kevinlepro#1913",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9361,7 +9361,7 @@
     "nb_pieces":3,
     "nb_coffres":3,
     "atelier":"NON",
-    "proprietaire_1":"Le-iop-du-25#4638",
+    "proprietaire_1":"timerolex-sonic#1460",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9417,7 +9417,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Zz-DaMs-zZ#7016",
+    "proprietaire_1":"DesiigneR#8817",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9473,9 +9473,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Emo1#4189",
+    "proprietaire_1":"sallarace-bastoavaitraison#8730",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":678,
@@ -9529,7 +9529,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"HollRoy#5163",
+    "proprietaire_1":"shimulporlapa#8941",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9627,7 +9627,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Brandon-Cratz#7691",
+    "proprietaire_1":"Clindo#7810",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9641,7 +9641,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"jesuispandamehdii#4922",
+    "proprietaire_1":"carottequequette#7517",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9669,7 +9669,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"1olilouol#2173",
+    "proprietaire_1":"Ondeflorrr#6020",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9879,9 +9879,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"TeamduQG2#6535",
+    "proprietaire_1":"Zobalzak59#5609",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":707,
@@ -9949,7 +9949,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"payllelegrosrigo#9796",
+    "proprietaire_1":"Magma-Ronce#7953",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -9991,7 +9991,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Newyh#1157",
+    "proprietaire_1":"Castaa#2019",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10035,7 +10035,7 @@
     "atelier":"NON",
     "proprietaire_1":"Hoogo#4751",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":718,
@@ -10061,9 +10061,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"caml0#8639",
+    "proprietaire_1":"Furiious#9280",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":720,
@@ -10159,9 +10159,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Heri-Son#1188",
+    "proprietaire_1":"THE-Ws#5876",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":727,
@@ -10187,7 +10187,7 @@
     "nb_pieces":3,
     "nb_coffres":3,
     "atelier":"NON",
-    "proprietaire_1":"Psycko#3944",
+    "proprietaire_1":"sarcax#4855",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10271,7 +10271,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"ENIROSSI1#4850",
+    "proprietaire_1":"halal-only#3024",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10364,14 +10364,14 @@
     "lieu":"VILLAGE DE LA CANOPEE",
     "position":"[-57, 15]",
     "nom":"Petite maison Hakam",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"badcorentin#3533",
-    "proprietaire_2":"Skytenz#3613",
-    "guilde":null
+    "proprietaire_1":"hayhayahayayyy#2626",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":742,
@@ -10383,7 +10383,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Xd-c-termi#3743",
+    "proprietaire_1":"Marleyyyyfe#7476",
     "proprietaire_2":"plagaleichon#8526",
     "guilde":null
   },
@@ -10427,7 +10427,7 @@
     "atelier":"NON",
     "proprietaire_1":"Blue735#1895",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":746,
@@ -10495,7 +10495,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"MAHCNER-PAN#1060",
+    "proprietaire_1":"Orijka#2424",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -10649,7 +10649,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"flooubobbyyyyyyyyy#2928",
+    "proprietaire_1":"hombredeguerra#6274",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10664,7 +10664,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"unxtrois#9939",
-    "proprietaire_2":"Shadow-Tiger#5095",
+    "proprietaire_2":"Legamerfoufurieux7982#7870",
     "guilde":null
   },
   {
@@ -10761,9 +10761,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"fjgfgfgkfgj#8866",
+    "proprietaire_1":"Lestrangeand#5096",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":770,
@@ -10775,7 +10775,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Nicolasone#4917",
+    "proprietaire_1":"baptitrois#9945",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10803,7 +10803,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"xX-supra-xel-Xx#3933",
+    "proprietaire_1":"Gold-Saint#1106",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -10915,7 +10915,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"DarksoulXIII#4365",
+    "proprietaire_1":"Brandon-Cratz#7691",
     "proprietaire_2":"elphnomen#4038",
     "guilde":null
   },
@@ -11013,7 +11013,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ros962#4047",
+    "proprietaire_1":"chibraxluisant#6647",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -11071,7 +11071,7 @@
     "atelier":"NON",
     "proprietaire_1":"Probably#4120",
     "proprietaire_2":null,
-    "guilde":null
+    "guilde":"y"
   },
   {
     "id":792,
@@ -11182,7 +11182,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"geuneus#6625",
-    "proprietaire_2":"MissSacry#3035",
+    "proprietaire_2":"le-gamer-fou-furieux#8378",
     "guilde":null
   },
   {
@@ -11260,14 +11260,14 @@
     "lieu":"ASTRUB",
     "position":"[4, -19]",
     "nom":"Petite maison d'Astrub",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"ZbooobZ#7412",
-    "proprietaire_2":"Fishuiris#9209",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":806,
@@ -11279,7 +11279,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"pritko#9388",
+    "proprietaire_1":"nibolu#8267",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -11293,7 +11293,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"pandacheatmen#5947",
+    "proprietaire_1":"Damflo#3021",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -11321,23 +11321,23 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"OoO-Seto-OoO#9267",
+    "proprietaire_1":"yidusu#1810",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":810,
     "lieu":"ASTRUB",
     "position":"[1, -19]",
     "nom":"Tres petite maison d'Astrub",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1500000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"fossil#7160",
-    "proprietaire_2":"Rootsstimulator#7669",
-    "guilde":null
+    "proprietaire_1":"Rootsstimulator#7669",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":811,
@@ -11442,13 +11442,13 @@
     "lieu":"ASTRUB",
     "position":"[2, -18]",
     "nom":"Petite maison d'Astrub",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":2000000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Dernierefois#1151",
-    "proprietaire_2":"XelorKyrow#2836",
+    "proprietaire_1":"XelorKyrow#2836",
+    "proprietaire_2":null,
     "guilde":null
   },
   {
@@ -11462,7 +11462,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"acerbi--acerbi#1778",
-    "proprietaire_2":"annemiecastrel#5790",
+    "proprietaire_2":"FSgemeenteschoten#2860",
     "guilde":null
   },
   {
@@ -11475,7 +11475,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"crail-mop#7779",
+    "proprietaire_1":"agi-nana#8616",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -11559,7 +11559,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"pandzia#1392",
+    "proprietaire_1":"Bocian1242345#6202",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -11573,7 +11573,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"bigbule#7074",
+    "proprietaire_1":"ros964#8258",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -11741,9 +11741,9 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"DANG#5127",
+    "proprietaire_1":"FSgemeenteschoten#2860",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":840,
@@ -11783,7 +11783,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"mouahahahaaaa#2671",
+    "proprietaire_1":"KOOOO#2229",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -11839,7 +11839,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"samakuro#5732",
+    "proprietaire_1":"Woutche#5106",
     "proprietaire_2":"lorensix07#1568",
     "guilde":null
   },
@@ -11895,7 +11895,7 @@
     "nb_pieces":3,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"riutapanda#8994",
+    "proprietaire_1":"boublux5000#4876",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -11965,7 +11965,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"hypnoenu#1922",
+    "proprietaire_1":"Sang-Ksion#3501",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -12049,9 +12049,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"StarlightUnicorn#3838",
+    "proprietaire_1":"Slitze#7102",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":862,
@@ -12086,14 +12086,14 @@
     "lieu":"VILLAGE KOALAK",
     "position":"[-16, 3]",
     "nom":"Grande maison des Eleveurs",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"basilicx#2409",
-    "proprietaire_2":"Le-cinquieme#7174",
-    "guilde":null
+    "proprietaire_1":"Le-cinquieme#7174",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":865,
@@ -12219,7 +12219,7 @@
     "atelier":"NON",
     "proprietaire_1":"redinguote#2149",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":874,
@@ -12469,7 +12469,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Onvousleve#8260",
+    "proprietaire_1":"Mousstikdeux#7253",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -12539,7 +12539,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Newlight#5113",
+    "proprietaire_1":"Aventure-des-8-TOW#1497",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -12562,28 +12562,28 @@
     "lieu":"CHATEAU AMAKNA",
     "position":"[2, -4]",
     "nom":"Grande maison du Chateau",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":4000000,
     "nb_pieces":3,
     "nb_coffres":3,
     "atelier":"NON",
     "proprietaire_1":"im-axperus#2793",
-    "proprietaire_2":"furious78261#7003",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":899,
     "lieu":"CHATEAU AMAKNA",
     "position":"[4, -3]",
     "nom":"Moyenne maison du Chateau",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"bay-harbor-butcher96#6669",
-    "proprietaire_2":"Viviarcher-Farm-1#8464",
-    "guilde":null
+    "proprietaire_1":"Viviarcher-Farm-1#8464",
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":900,
@@ -12637,7 +12637,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"hppro#7098",
+    "proprietaire_1":"THE-WS1#9238",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -12667,7 +12667,7 @@
     "atelier":"NON",
     "proprietaire_1":"Ze-noxez#8101",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":906,
@@ -12680,7 +12680,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"aimedatyoux#9546",
-    "proprietaire_2":"saladederizjoliejolie8#9683",
+    "proprietaire_2":"Zyl-Pearl#5363",
     "guilde":null
   },
   {
@@ -12707,7 +12707,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"xXx-dwope-xXx#6622",
+    "proprietaire_1":"Chabalocheeee#9383",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -12764,7 +12764,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"lizzy89#2417",
-    "proprietaire_2":"Bob-Marleyyy#9822",
+    "proprietaire_2":"Nomevaneesporfa#3354",
     "guilde":null
   },
   {
@@ -12875,7 +12875,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"jesulito#5467",
+    "proprietaire_1":"Dpr-San#7002",
     "proprietaire_2":"Langebontarien#5953",
     "guilde":null
   },
@@ -12903,7 +12903,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"asasin-slayer#1416",
+    "proprietaire_1":"-Leansyrup-#5339",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -12945,7 +12945,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Robbyfourtwen#4196",
+    "proprietaire_1":"Xx-Black-White-xX042697#3120",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -13016,7 +13016,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"okkanonrentre#1380",
-    "proprietaire_2":"peluziable#8536",
+    "proprietaire_2":"undergrind#2255",
     "guilde":null
   },
   {
@@ -13029,9 +13029,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"ldteam1#3984",
+    "proprietaire_1":"BABES#7492",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":932,
@@ -13113,7 +13113,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Zozodebow#9885",
+    "proprietaire_1":"rigolobeatrice#9339",
     "proprietaire_2":"atreidos#8850",
     "guilde":null
   },
@@ -13185,7 +13185,7 @@
     "atelier":"NON",
     "proprietaire_1":"Nvictussix#2580",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":943,
@@ -13295,9 +13295,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Juuk-panda#4171",
+    "proprietaire_1":"Arnoold#2974",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":951,
@@ -13309,7 +13309,7 @@
     "nb_pieces":2,
     "nb_coffres":2,
     "atelier":"NON",
-    "proprietaire_1":"Obeletas#3398",
+    "proprietaire_1":"ctoilnoobi#3521",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -13332,14 +13332,14 @@
     "lieu":"SUFOKIA",
     "position":"[12, 24]",
     "nom":"Maison Sufokia",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"marcoimperator#5509",
-    "proprietaire_2":"predator#2352",
-    "guilde":null
+    "proprietaire_2":null,
+    "guilde":"y"
   },
   {
     "id":954,
@@ -13409,7 +13409,7 @@
     "atelier":"NON",
     "proprietaire_1":"Crakimdeux#1347",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":959,
@@ -13500,14 +13500,14 @@
     "lieu":"SUFOKIA",
     "position":"[10, 26]",
     "nom":"Maison Sufokia",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"latastoy-drwop#2269",
-    "proprietaire_2":"undefaul03#2001",
-    "guilde":null
+    "proprietaire_1":"Elitedarkos#4378",
+    "proprietaire_2":null,
+    "guilde":"n"
   },
   {
     "id":966,
@@ -13549,7 +13549,7 @@
     "atelier":"NON",
     "proprietaire_1":"-HiRoShImAa-#1288",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":969,
@@ -13619,20 +13619,20 @@
     "atelier":"NON",
     "proprietaire_1":"Nvictuss#8316",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":974,
     "lieu":"SUFOKIA",
     "position":"[10, 27]",
     "nom":"Maison Sufokia",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":1000000,
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"hijitos#2146",
-    "proprietaire_2":"darkmioonj#1084",
+    "proprietaire_2":null,
     "guilde":null
   },
   {
@@ -13640,13 +13640,13 @@
     "lieu":"SUFOKIA",
     "position":"[12, 27]",
     "nom":"Grande maison Sufokia",
-    "nb_instances":2,
+    "nb_instances":1,
     "prix":3000000,
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Henoch#8937",
-    "proprietaire_2":"Stoneflip#3780",
+    "proprietaire_1":"Stoneflip#3780",
+    "proprietaire_2":null,
     "guilde":null
   },
   {
@@ -13701,7 +13701,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"annemiecastrel#5790",
+    "proprietaire_1":"Emilimetre#8707",
     "proprietaire_2":null,
     "guilde":"n"
   },
@@ -13729,7 +13729,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"PsyckoDroopppppp#5941",
+    "proprietaire_1":"black-two#9234",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -13815,7 +13815,7 @@
     "atelier":"NON",
     "proprietaire_1":"Tuk-Tuk-Sept-Quatre#3289",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":988,
@@ -13828,7 +13828,7 @@
     "nb_coffres":1,
     "atelier":"NON",
     "proprietaire_1":"masterkillerses#7597",
-    "proprietaire_2":"GroTher453#7460",
+    "proprietaire_2":"starshtactique#8768",
     "guilde":null
   },
   {
@@ -13855,7 +13855,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Jara#7785",
+    "proprietaire_1":"x-Elsesi-x#9779",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -13897,7 +13897,7 @@
     "nb_pieces":3,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"reyreysisi#6866",
+    "proprietaire_1":"Yaann60#9548",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -13939,9 +13939,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"YannxMelanii2e#8666",
+    "proprietaire_1":"azideuuuh#4875",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":997,
@@ -14051,9 +14051,9 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"WeddingCake#8612",
+    "proprietaire_1":"xtrois#4808",
     "proprietaire_2":null,
-    "guilde":"y"
+    "guilde":"n"
   },
   {
     "id":1005,
@@ -14079,7 +14079,7 @@
     "nb_pieces":1,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"Gold-Saint#6600",
+    "proprietaire_1":"-LeuLeu-#4526",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -14121,9 +14121,9 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"--iHso--#8555",
+    "proprietaire_1":"BienvenuTHYYYY#9987",
     "proprietaire_2":null,
-    "guilde":"n"
+    "guilde":"y"
   },
   {
     "id":1010,
@@ -14177,7 +14177,7 @@
     "nb_pieces":2,
     "nb_coffres":1,
     "atelier":"NON",
-    "proprietaire_1":"kasakargo#2114",
+    "proprietaire_1":"Xayah-iop#4751",
     "proprietaire_2":null,
     "guilde":"y"
   },
@@ -14264,5 +14264,299 @@
     "proprietaire_1":"titesinse#8036",
     "proprietaire_2":"Kanzzzzzzzz#1476",
     "guilde":null
+  },
+  {
+    "id":1020,
+    "lieu":"MADESTRAM",
+    "position":"[9, -4]",
+    "nom":"Cabane du pecheur",
+    "nb_instances":1,
+    "prix":500000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"syruplean#1226",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1021,
+    "lieu":"MADESTRAM",
+    "position":"[9, -4]",
+    "nom":"Cahute du marin",
+    "nb_instances":1,
+    "prix":125000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"boublux4000#5855",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1022,
+    "lieu":"MADESTRAM",
+    "position":"[9, -3]",
+    "nom":"Grande maison coque du port",
+    "nb_instances":1,
+    "prix":500000,
+    "nb_pieces":3,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"Sacrilolipop#5318",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1023,
+    "lieu":"MADESTRAM",
+    "position":"[9, -3]",
+    "nom":"Petite cahute pres du port",
+    "nb_instances":1,
+    "prix":150000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"marchedetravers#7749",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1024,
+    "lieu":"MADESTRAM",
+    "position":"[8, -3]",
+    "nom":"Batisse coque",
+    "nb_instances":2,
+    "prix":300000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"--Le-SuRvIvAnT--#9102",
+    "proprietaire_2":null,
+    "guilde":null
+  },
+  {
+    "id":1025,
+    "lieu":"MADESTRAM",
+    "position":"[8, -3]",
+    "nom":"Maisonnette du pecheur",
+    "nb_instances":1,
+    "prix":150000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"-Astuce-#4836",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1026,
+    "lieu":"MADESTRAM",
+    "position":"[8, -3]",
+    "nom":"Demeure du pecheur",
+    "nb_instances":1,
+    "prix":275000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"Voyager#2580",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1027,
+    "lieu":"MADESTRAM",
+    "position":"[8, -3]",
+    "nom":"Grande maison coque du port",
+    "nb_instances":1,
+    "prix":500000,
+    "nb_pieces":3,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"Carteam1#1784",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1028,
+    "lieu":"MADESTRAM",
+    "position":"[8, -2]",
+    "nom":"Petite maison pres de la place",
+    "nb_instances":1,
+    "prix":200000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"Edel-3#1625",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1029,
+    "lieu":"MADESTRAM",
+    "position":"[8, -2]",
+    "nom":"Maison coque pres de la place",
+    "nb_instances":1,
+    "prix":300000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"matthieu951163#6991",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1030,
+    "lieu":"MADESTRAM",
+    "position":"[8, -2]",
+    "nom":"Petite maison pres de la place",
+    "nb_instances":1,
+    "prix":200000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"uegreh#6547",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1031,
+    "lieu":"MADESTRAM",
+    "position":"[8, -2]",
+    "nom":"Petite maison pres de la place",
+    "nb_instances":1,
+    "prix":200000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"abdoo-xelor#3616",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1032,
+    "lieu":"MADESTRAM",
+    "position":"[8, -2]",
+    "nom":"Petite maison pres de la place",
+    "nb_instances":1,
+    "prix":200000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"eferhtehtrjjojojo#1148",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1033,
+    "lieu":"MADESTRAM",
+    "position":"[9, -2]",
+    "nom":"Petite maison du port",
+    "nb_instances":1,
+    "prix":125000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"Dpr-Feu#8062",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1034,
+    "lieu":"MADESTRAM",
+    "position":"[9, -2]",
+    "nom":"Maison coque du port",
+    "nb_instances":2,
+    "prix":450000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"sacrii#1569",
+    "proprietaire_2":"tchek8#9211",
+    "guilde":null
+  },
+  {
+    "id":1035,
+    "lieu":"MADESTRAM",
+    "position":"[10, -1]",
+    "nom":"Petite maison du pecheur",
+    "nb_instances":1,
+    "prix":200000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"tchek1#3095",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1036,
+    "lieu":"MADESTRAM",
+    "position":"[10, 0]",
+    "nom":"Maison coque de bateau",
+    "nb_instances":1,
+    "prix":350000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"bebefin#5685",
+    "proprietaire_2":null,
+    "guilde":"y"
+  },
+  {
+    "id":1037,
+    "lieu":"MADESTRAM",
+    "position":"[10, 0]",
+    "nom":"Petite maison de marin",
+    "nb_instances":1,
+    "prix":300000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"LaGrosseKhapta#7718",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1038,
+    "lieu":"MADESTRAM",
+    "position":"[11, 0]",
+    "nom":"Maisonnette de pecheur",
+    "nb_instances":1,
+    "prix":150000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"MeAtTheZoo#2698",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1039,
+    "lieu":"MADESTRAM",
+    "position":"[11, 2]",
+    "nom":"Petite maison de la riviere",
+    "nb_instances":1,
+    "prix":150000,
+    "nb_pieces":1,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"ifijeje#8415",
+    "proprietaire_2":null,
+    "guilde":"n"
+  },
+  {
+    "id":1040,
+    "lieu":"MADESTRAM",
+    "position":"[11, 2]",
+    "nom":"Maison au toit de coque",
+    "nb_instances":1,
+    "prix":400000,
+    "nb_pieces":2,
+    "nb_coffres":1,
+    "atelier":null,
+    "proprietaire_1":"SawFamily-Fresh#7682",
+    "proprietaire_2":null,
+    "guilde":"y"
   }
 ]
