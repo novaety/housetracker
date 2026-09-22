@@ -1,110 +1,88 @@
+require("dotenv").config();
+
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
+const { createClient } = require("@supabase/supabase-js");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const ROOT_DIR = __dirname;
+
 // ============================================================
-// 📁 CHEMINS
+// 🗄️ SUPABASE
 // ============================================================
 
-const ROOT_DIR = __dirname;
-const DATA_FILE = path.join(ROOT_DIR, "data", "houses.json");
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+    console.error("❌ Variables Supabase manquantes.");
+    console.error("Vérifie ton fichier .env");
+    process.exit(1);
+}
+
+const supabase = createClient(
+    supabaseUrl,
+    supabaseKey
+);
 
 // ============================================================
 // ⚙️ MIDDLEWARES
 // ============================================================
 
-// Permet de recevoir du JSON depuis le navigateur
 app.use(express.json());
-
-// Permet de servir les fichiers statiques
-// css/, scripts/, html/, etc.
 app.use(express.static(ROOT_DIR));
 
-
 // ============================================================
-// 🏠 PAGE PRINCIPALE
+// 🏠 PAGE HOUSES
 // ============================================================
 
 app.get("/houses", (req, res) => {
-    res.sendFile(path.join(ROOT_DIR, "html", "houses.html"));
+    res.sendFile(
+        path.join(ROOT_DIR, "html", "houses.html")
+    );
 });
-
-
-// ============================================================
-// 📖 LECTURE DU FICHIER JSON
-// ============================================================
-
-function readHouses() {
-    try {
-        const file = fs.readFileSync(DATA_FILE, "utf8");
-
-        return JSON.parse(file);
-
-    } catch (error) {
-
-        console.error("❌ Erreur lors de la lecture de houses.json :");
-        console.error(error);
-
-        return null;
-    }
-}
-
-
-// ============================================================
-// 💾 ÉCRITURE DU FICHIER JSON
-// ============================================================
-
-function saveHouses(houses) {
-    try {
-
-        fs.writeFileSync(
-            DATA_FILE,
-            JSON.stringify(houses, null, 2),
-            "utf8"
-        );
-
-        return true;
-
-    } catch (error) {
-
-        console.error("❌ Erreur lors de la sauvegarde de houses.json :");
-        console.error(error);
-
-        return false;
-    }
-}
-
 
 // ============================================================
 // 📋 GET /api/houses
-// Retourne toutes les maisons
+// Récupère toutes les maisons depuis Supabase
 // ============================================================
 
-app.get("/api/houses", (req, res) => {
+app.get("/api/houses", async (req, res) => {
+    try {
+        const { data, error } = await supabase
+            .from("houses")
+            .select("*")
+            .order("id", { ascending: true });
 
-    const houses = readHouses();
+        if (error) {
+            console.error("❌ Erreur Supabase :", error);
 
-    if (!houses) {
-        return res.status(500).json({
+            return res.status(500).json({
+                success: false,
+                error: "Impossible de récupérer les maisons"
+            });
+        }
+
+        res.json(data);
+
+    } catch (error) {
+        console.error("❌ Erreur serveur :", error);
+
+        res.status(500).json({
             success: false,
-            error: "Impossible de lire houses.json"
+            error: "Erreur serveur"
         });
     }
-
-    res.json(houses);
 });
-
 
 // ============================================================
 // 🏠 GET /api/houses/:id
-// Retourne une maison précise
+// Récupère une maison précise
 // ============================================================
 
-app.get("/api/houses/:id", (req, res) => {
-
+app.get("/api/houses/:id", async (req, res) => {
     const id = Number(req.params.id);
 
     if (Number.isNaN(id)) {
@@ -114,37 +92,40 @@ app.get("/api/houses/:id", (req, res) => {
         });
     }
 
-    const houses = readHouses();
+    try {
+        const { data, error } = await supabase
+            .from("houses")
+            .select("*")
+            .eq("id", id)
+            .single();
 
-    if (!houses) {
-        return res.status(500).json({
+        if (error) {
+            console.error("❌ Erreur Supabase :", error);
+
+            return res.status(404).json({
+                success: false,
+                error: "Maison introuvable"
+            });
+        }
+
+        res.json(data);
+
+    } catch (error) {
+        console.error("❌ Erreur serveur :", error);
+
+        res.status(500).json({
             success: false,
-            error: "Impossible de lire houses.json"
+            error: "Erreur serveur"
         });
     }
-
-    const house = houses.find(
-        h => Number(h.id) === id
-    );
-
-    if (!house) {
-        return res.status(404).json({
-            success: false,
-            error: "Maison introuvable"
-        });
-    }
-
-    res.json(house);
 });
-
 
 // ============================================================
 // ✏️ PUT /api/houses/:id
-// Modifie les propriétaires d'une maison
+// Modifie une maison
 // ============================================================
 
-app.put("/api/houses/:id", (req, res) => {
-
+app.put("/api/houses/:id", async (req, res) => {
     const id = Number(req.params.id);
 
     if (Number.isNaN(id)) {
@@ -154,204 +135,150 @@ app.put("/api/houses/:id", (req, res) => {
         });
     }
 
-    const houses = readHouses();
+    const updates = {};
 
-    if (!houses) {
-        return res.status(500).json({
-            success: false,
-            error: "Impossible de lire houses.json"
-        });
-    }
-
-    const house = houses.find(
-        h => Number(h.id) === id
-    );
-
-    if (!house) {
-        return res.status(404).json({
-            success: false,
-            error: "Maison introuvable"
-        });
-    }
-
-
-    // --------------------------------------------------------
-    // Récupération des données envoyées
-    // --------------------------------------------------------
-
-    const {
-        proprietaire_1,
-        proprietaire_2
-    } = req.body;
-
-
-    // --------------------------------------------------------
-    // Propriétaire 1
-    // --------------------------------------------------------
-
-    if (proprietaire_1 !== undefined) {
-
-        house.proprietaire_1 =
-            proprietaire_1 === ""
+    if (req.body.proprietaire_1 !== undefined) {
+        updates.proprietaire_1 =
+            req.body.proprietaire_1 === ""
                 ? null
-                : proprietaire_1;
+                : req.body.proprietaire_1;
     }
 
-
-    // --------------------------------------------------------
-    // Propriétaire 2
-    // --------------------------------------------------------
-
-    if (proprietaire_2 !== undefined) {
-
-        house.proprietaire_2 =
-            proprietaire_2 === ""
+    if (req.body.proprietaire_2 !== undefined) {
+        updates.proprietaire_2 =
+            req.body.proprietaire_2 === ""
                 ? null
-                : proprietaire_2;
+                : req.body.proprietaire_2;
     }
 
-
-    // --------------------------------------------------------
-    // Sauvegarde
-    // --------------------------------------------------------
-
-    const saved = saveHouses(houses);
-
-    if (!saved) {
-
-        return res.status(500).json({
+    if (Object.keys(updates).length === 0) {
+        return res.status(400).json({
             success: false,
-            error: "Impossible de sauvegarder houses.json"
+            error: "Aucune modification fournie"
         });
     }
 
+    try {
+        const { data, error } = await supabase
+            .from("houses")
+            .update(updates)
+            .eq("id", id)
+            .select()
+            .single();
 
-    // --------------------------------------------------------
-    // Réponse
-    // --------------------------------------------------------
+        if (error) {
+            console.error("❌ Erreur Supabase :", error);
 
-    res.json({
-        success: true,
-        message: "Maison mise à jour",
-        house: house
-    });
+            return res.status(500).json({
+                success: false,
+                error: "Impossible de modifier la maison"
+            });
+        }
+
+        res.json({
+            success: true,
+            message: "Maison mise à jour",
+            house: data
+        });
+
+    } catch (error) {
+        console.error("❌ Erreur serveur :", error);
+
+        res.status(500).json({
+            success: false,
+            error: "Erreur serveur"
+        });
+    }
 });
-
 
 // ============================================================
 // ✏️ PUT /api/houses
-// Modifie plusieurs maisons en une seule fois
+// Modifie plusieurs maisons
 // ============================================================
 
-app.put("/api/houses", (req, res) => {
-
+app.put("/api/houses", async (req, res) => {
     const updates = req.body;
 
-
-    // --------------------------------------------------------
-    // Vérification
-    // --------------------------------------------------------
-
     if (!Array.isArray(updates)) {
-
         return res.status(400).json({
             success: false,
             error: "Le corps de la requête doit être un tableau"
         });
     }
 
+    try {
+        for (const update of updates) {
+            const id = Number(update.id);
 
-    const houses = readHouses();
+            if (Number.isNaN(id)) {
+                continue;
+            }
 
-    if (!houses) {
+            const fields = {};
 
-        return res.status(500).json({
+            if (update.proprietaire_1 !== undefined) {
+                fields.proprietaire_1 =
+                    update.proprietaire_1 === ""
+                        ? null
+                        : update.proprietaire_1;
+            }
+
+            if (update.proprietaire_2 !== undefined) {
+                fields.proprietaire_2 =
+                    update.proprietaire_2 === ""
+                        ? null
+                        : update.proprietaire_2;
+            }
+
+            if (Object.keys(fields).length === 0) {
+                continue;
+            }
+
+            const { error } = await supabase
+                .from("houses")
+                .update(fields)
+                .eq("id", id);
+
+            if (error) {
+                console.error(
+                    `❌ Erreur pour la maison ${id} :`,
+                    error
+                );
+
+                return res.status(500).json({
+                    success: false,
+                    error: `Impossible de modifier la maison ${id}`
+                });
+            }
+        }
+
+        res.json({
+            success: true,
+            message: "Maisons mises à jour"
+        });
+
+    } catch (error) {
+        console.error("❌ Erreur serveur :", error);
+
+        res.status(500).json({
             success: false,
-            error: "Impossible de lire houses.json"
+            error: "Erreur serveur"
         });
     }
-
-
-    // --------------------------------------------------------
-    // Application des modifications
-    // --------------------------------------------------------
-
-    for (const update of updates) {
-
-        const id = Number(update.id);
-
-        if (Number.isNaN(id)) {
-            continue;
-        }
-
-
-        const house = houses.find(
-            h => Number(h.id) === id
-        );
-
-        if (!house) {
-            continue;
-        }
-
-
-        // Propriétaire 1
-
-        if (update.proprietaire_1 !== undefined) {
-
-            house.proprietaire_1 =
-                update.proprietaire_1 === ""
-                    ? null
-                    : update.proprietaire_1;
-        }
-
-
-        // Propriétaire 2
-
-        if (update.proprietaire_2 !== undefined) {
-
-            house.proprietaire_2 =
-                update.proprietaire_2 === ""
-                    ? null
-                    : update.proprietaire_2;
-        }
-    }
-
-
-    // --------------------------------------------------------
-    // Sauvegarde globale
-    // --------------------------------------------------------
-
-    const saved = saveHouses(houses);
-
-    if (!saved) {
-
-        return res.status(500).json({
-            success: false,
-            error: "Impossible de sauvegarder houses.json"
-        });
-    }
-
-
-    res.json({
-        success: true,
-        message: "Maisons mises à jour"
-    });
 });
 
-
 // ============================================================
-// 🚀 DÉMARRAGE DU SERVEUR
+// 🚀 DÉMARRAGE
 // ============================================================
 
 app.listen(PORT, () => {
-
     console.log("");
     console.log("==========================================");
     console.log("🏠 HOUSE TRACKER");
     console.log("==========================================");
     console.log("");
     console.log(`🌐 Site : http://localhost:${PORT}`);
-    console.log(`📁 JSON : ${DATA_FILE}`);
+    console.log("🗄️ Base de données : Supabase");
     console.log("");
     console.log("Serveur démarré avec succès !");
     console.log("");

@@ -714,6 +714,8 @@ window.saveAllChanges = async function () {
   const updates =
     Object.values(changes);
 
+  console.log("📤 DONNÉES ENVOYÉES :", updates);
+
 
   if (updates.length === 0) {
 
