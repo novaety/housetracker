@@ -187,3 +187,395 @@ button:hover {
   background-color: #2980b9;
   transform: scale(1.05);
 }
+
+/* ========================================================= */
+/* 🔀 BOUTONS DE CHANGEMENT DE MODE                         */
+/* ========================================================= */
+
+.mode-switch {
+  width: 100%;
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  width: auto !important;
+  margin-top: 5px;
+}
+
+.mode-btn.active {
+  background: #03af37;
+  color: white;
+}
+
+
+/* ========================================================= */
+/* ✏️ MODE EDIT                                              */
+/* ========================================================= */
+
+#editMode {
+  width: 100%;
+  display: block;
+}
+
+.edit-header {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit-header h2 {
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.save-all-btn {
+  margin-top: 0;
+  background: #3498db;
+  color: white;
+}
+
+.save-all-btn:hover {
+  background: #2980b9;
+}
+
+
+/* ========================================================= */
+/* 📋 LISTE DES MAISONS À MODIFIER                          */
+/* ========================================================= */
+
+#editList {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+
+/* Une ligne */
+
+.edit-row {
+  width: 100% !important;
+  min-height: 58px;
+
+  display: grid !important;
+
+  grid-template-columns:
+    80px
+    55px
+    minmax(180px, 1fr)
+    150px
+    150px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding: 8px 12px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  gap: 10px;
+}
+
+
+/* Groupe position clair */
+
+.edit-group-light {
+  background: #cfebf5;
+}
+
+
+/* Groupe position foncé */
+
+.edit-group-dark {
+  background: #8fb8d9;
+}
+
+
+/* ========================================================= */
+/* 📍 POSITION                                               */
+/* ========================================================= */
+
+.edit-position {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+/* ========================================================= */
+/* 🆔 ID                                                      */
+/* ========================================================= */
+
+.edit-id {
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #8f0101;
+  text-align: center;
+}
+
+
+/* ========================================================= */
+/* 🏠 NOM                                                     */
+/* ========================================================= */
+
+.edit-house-name {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+/* ========================================================= */
+/* 👤 PROPRIÉTAIRES                                          */
+/* ========================================================= */
+
+.edit-owner-input {
+  width: 100% !important;
+  height: 18px;
+
+  box-sizing: border-box;
+
+  margin: 0 !important;
+
+  padding: 7px 8px;
+
+  font-family: 'Roboto';
+  font-size: 13px;
+
+  background: white;
+}
+
+.edit-owner-input::placeholder {
+  color: #777;
+  font-style: italic;
+}
+
+
+/* ========================================================= */
+/* 🏷️ EN-TÊTE DE LA LISTE                                    */
+/* ========================================================= */
+
+.edit-list-header {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    80px
+    55px
+    minmax(180px, 1fr)
+    150px
+    150px;
+
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  gap: 10px;
+
+  background: #34495e;
+  color: white;
+
+  border-radius: 10px 10px 0 0;
+
+  font-family: 'Poppins';
+  font-size: 13px;
+}
+
+.edit-list-header > div {
+  width: auto !important;
+  display: block !important;
+}
+
+/* ===================================================== */
+/* MODES TRACKING / EDIT                                 */
+/* ===================================================== */
+
+/*
+   IMPORTANT :
+   Le CSS original contient :
+
+   .container div {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   On neutralise donc cet effet sur les conteneurs
+   ajoutés pour les deux modes.
+*/
+
+#trackingMode,
+#editMode {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+
+/* Tracking garde son fonctionnement normal */
+#trackingMode {
+  display: block !important;
+}
+
+
+/* ===================================================== */
+/* BOUTONS DE MODE                                       */
+/* ===================================================== */
+
+.mode-buttons {
+  width: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+
+  justify-content: flex-start !important;
+  align-items: center !important;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.mode-buttons button {
+  width: auto !important;
+}
+
+
+/* ===================================================== */
+/* MODE EDIT                                              */
+/* ===================================================== */
+
+#editMode {
+  display: none;
+}
+
+#editMode > h3 {
+  margin-top: 20px;
+}
+
+
+/* ===================================================== */
+/* BOUTON SAUVEGARDE                                      */
+/* ===================================================== */
+
+#saveButton {
+  margin-bottom: 15px;
+
+  background: #3498db;
+  color: white;
+}
+
+#saveButton:hover {
+  background: #2980b9;
+}
+
+
+/* ===================================================== */
+/* LISTE EDIT                                             */
+/* ===================================================== */
+
+#editList {
+  width: 100% !important;
+
+  display: block !important;
+
+  box-sizing: border-box;
+}
+
+
+/* ===================================================== */
+/* LIGNE D'UNE MAISON                                    */
+/* ===================================================== */
+
+.edit-house {
+  width: 100% !important;
+
+  box-sizing: border-box;
+
+  display: grid !important;
+
+  grid-template-columns:
+    90px
+    55px
+    1fr
+    150px
+    150px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  margin: 0 !important;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===================================================== */
+/* COULEURS DES GROUPES                                  */
+/* ===================================================== */
+
+.edit-house-light {
+  background: #cfebf1;
+}
+
+.edit-house-dark {
+  background: #8fb8d9;
+}
+
+
+/* ===================================================== */
+/* COLONNES                                               */
+/* ===================================================== */
+
+.edit-position {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.edit-id {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #8f0101;
+
+  text-align: center;
+}
+
+.edit-name {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* ===================================================== */
+/* INPUTS PROPRIETAIRES                                  */
+/* ===================================================== */
+
+.edit-owner {
+  width: 100% !important;
+
+  box-sizing: border-box;
+
+  height: 36px;
+
+  padding: 7px;
+
+  margin: 0 !important;
+
+  font-family: 'Roboto';
+  font-size: 13px;
+}
