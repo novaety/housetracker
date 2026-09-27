@@ -1,5 +1,9 @@
+/* ============================================================
+   GLOBAL
+   ============================================================ */
+
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   background: #f5f6fa;
   margin: 0;
   padding: 20px;
@@ -8,16 +12,18 @@ body {
 }
 
 .container {
-    width: 600px;
+  width: 1000px;
+  max-width: 95vw;
 }
 
-.container div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* pousse un à gauche, l'autre à droite */
-}
 
-h1 {
+/* ============================================================
+   TITRES
+   ============================================================ */
+
+.container > h1 {
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -25,7 +31,11 @@ h3 {
   margin-top: 20px;
 }
 
-/* inputs */
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
 input {
   width: 150px;
   height: 20px;
@@ -35,7 +45,11 @@ input {
   border-radius: 6px;
 }
 
-/* boutons */
+
+/* ============================================================
+   BOUTONS
+   ============================================================ */
+
 button {
   padding: 8px 12px;
   border: none;
@@ -44,7 +58,7 @@ button {
   color: rgb(3, 0, 0);
   cursor: pointer;
   margin-top: 5px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
 
@@ -52,53 +66,91 @@ button:hover {
   background: #03af37;
 }
 
-/* liste résultats */
-#list {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+
+/* ============================================================
+   BOUTONS TRACKING / EDIT
+   ============================================================ */
+
+.mode-buttons {
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
   gap: 10px;
 
-  background: transparent; /* IMPORTANT */
+  margin-bottom: 20px;
+}
+
+.mode-buttons button {
+  width: auto !important;
+  margin-top: 5px;
+}
+
+
+/* ============================================================
+   MODE TRACKING
+   ============================================================ */
+
+#trackingMode {
+  width: 600px;
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+
+  display: block !important;
+}
+
+
+/* ============================================================
+   LISTE DES RÉSULTATS TRACKING
+   ============================================================ */
+
+#list {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  background: transparent;
   padding: 0;
 }
 
-/* chaque résultat */
 
-/* détails */
-#details {
-  width: 600px;
-  margin-top: 20px;
-  background: white;
-  padding: 0px;
-  border-radius: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-/* texte "aucun résultat" */
-#list p,
-#details p {
-  margin: 0;
-}
-
-#details h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
+/* ============================================================
+   BOUTON D'UNE MAISON
+   ============================================================ */
 
 .house-btn {
   width: 100%;
   height: 100%;
+
   display: flex;
+
   justify-content: space-between;
   align-items: center;
+
   padding: 14px 16px;
+
   margin-bottom: 12px;
+
   border: none;
   border-radius: 12px;
+
   background: rgb(189, 237, 243);
+
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
   font-size: 14px;
 }
 
@@ -110,13 +162,13 @@ button:hover {
   font-weight: 600;
   color: #000000;
   text-align: left;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
 .house-owner {
   text-align: right;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #8f0101;
   font-weight: 500;
@@ -129,25 +181,70 @@ button:hover {
   font-size: 16px;
 }
 
+
+/* ============================================================
+   DÉTAILS TRACKING
+   ============================================================ */
+
+#details {
+  width: 600px;
+  max-width: 100%;
+
+  margin-top: 20px;
+
+  background: white;
+
+  padding: 0;
+
+  border-radius: 20px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+#list p,
+#details p {
+  margin: 0;
+}
+
+#details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+/* ============================================================
+   TABLEAU DES DÉTAILS TRACKING
+   ============================================================ */
+
 .house-details {
   width: 100%;
+
   border-collapse: separate;
   border-spacing: 0;
+
   border-radius: 16px;
-  overflow: hidden; /* coupe les coins */
+
+  overflow: hidden;
+
   margin-top: 10px;
 }
 
 .house-details th,
 .house-details td {
   padding: 10px 12px;
+
   text-align: left;
+
   border-bottom: 1px solid #eee;
 }
 
 .house-details th {
   width: 180px;
+
   color: #000000;
+
   font-weight: 600;
 }
 
@@ -168,18 +265,33 @@ button:hover {
   background-color: #dfdfdf;
 }
 
+
+/* ============================================================
+   BOUTONS INDEX
+   ============================================================ */
+
 .btn-index {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   width: 250px;
+
   padding: 12px 24px;
-  margin: 10px;
+
+  margin : 10px auto;
+
   background-color: #3498db;
+
   color: white;
+
   text-decoration: none;
+
   border-radius: 12px;
+
   font-size: 18px;
+
   transition: 0.3s;
 }
 
@@ -188,286 +300,29 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ========================================================= */
-/* 🔀 BOUTONS DE CHANGEMENT DE MODE                         */
-/* ========================================================= */
 
-.mode-switch {
-  width: 100%;
-  display: flex !important;
-  justify-content: flex-start !important;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.mode-btn {
-  width: auto !important;
-  margin-top: 5px;
-}
-
-.mode-btn.active {
-  background: #03af37;
-  color: white;
-}
-
-
-/* ========================================================= */
-/* ✏️ MODE EDIT                                              */
-/* ========================================================= */
+/* ============================================================
+   MODE EDIT
+   ============================================================ */
 
 #editMode {
-  width: 100%;
-  display: block;
-}
-
-.edit-header {
-  width: 100%;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.edit-header h2 {
-  margin: 0;
-  font-family: 'Poppins';
-}
-
-.save-all-btn {
-  margin-top: 0;
-  background: #3498db;
-  color: white;
-}
-
-.save-all-btn:hover {
-  background: #2980b9;
-}
-
-
-/* ========================================================= */
-/* 📋 LISTE DES MAISONS À MODIFIER                          */
-/* ========================================================= */
-
-#editList {
-  width: 100%;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0 !important;
-}
-
-
-/* Une ligne */
-
-.edit-row {
-  width: 100% !important;
-  min-height: 58px;
-
-  display: grid !important;
-
-  grid-template-columns:
-    80px
-    55px
-    minmax(180px, 1fr)
-    150px
-    150px;
-
-  align-items: center;
-
-  box-sizing: border-box;
-
-  padding: 8px 12px;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-
-  gap: 10px;
-}
-
-
-/* Groupe position clair */
-
-.edit-group-light {
-  background: #cfebf5;
-}
-
-
-/* Groupe position foncé */
-
-.edit-group-dark {
-  background: #8fb8d9;
-}
-
-
-/* ========================================================= */
-/* 📍 POSITION                                               */
-/* ========================================================= */
-
-.edit-position {
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 13px;
-}
-
-
-/* ========================================================= */
-/* 🆔 ID                                                      */
-/* ========================================================= */
-
-.edit-id {
-  font-family: 'Poppins';
-  font-weight: 600;
-  color: #8f0101;
-  text-align: center;
-}
-
-
-/* ========================================================= */
-/* 🏠 NOM                                                     */
-/* ========================================================= */
-
-.edit-house-name {
-  font-family: 'Poppins';
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-}
-
-
-/* ========================================================= */
-/* 👤 PROPRIÉTAIRES                                          */
-/* ========================================================= */
-
-.edit-owner-input {
-  width: 100% !important;
-  height: 18px;
-
-  box-sizing: border-box;
-
-  margin: 0 !important;
-
-  padding: 7px 8px;
-
-  font-family: 'Roboto';
-  font-size: 13px;
-
-  background: white;
-}
-
-.edit-owner-input::placeholder {
-  color: #777;
-  font-style: italic;
-}
-
-
-/* ========================================================= */
-/* 🏷️ EN-TÊTE DE LA LISTE                                    */
-/* ========================================================= */
-
-.edit-list-header {
   width: 100% !important;
 
-  display: grid !important;
+  max-width: 100%;
 
-  grid-template-columns:
-    80px
-    55px
-    minmax(180px, 1fr)
-    150px
-    150px;
-
-  box-sizing: border-box;
-
-  padding: 10px 12px;
-
-  gap: 10px;
-
-  background: #34495e;
-  color: white;
-
-  border-radius: 10px 10px 0 0;
-
-  font-family: 'Poppins';
-  font-size: 13px;
-}
-
-.edit-list-header > div {
-  width: auto !important;
-  display: block !important;
-}
-
-/* ===================================================== */
-/* MODES TRACKING / EDIT                                 */
-/* ===================================================== */
-
-/*
-   IMPORTANT :
-   Le CSS original contient :
-
-   .container div {
-       display: flex;
-       justify-content: space-between;
-   }
-
-   On neutralise donc cet effet sur les conteneurs
-   ajoutés pour les deux modes.
-*/
-
-#trackingMode,
-#editMode {
-  width: 100% !important;
   box-sizing: border-box;
 }
 
 
-/* Tracking garde son fonctionnement normal */
-#trackingMode {
-  display: block !important;
-}
-
-
-/* ===================================================== */
-/* BOUTONS DE MODE                                       */
-/* ===================================================== */
-
-.mode-buttons {
-  width: auto !important;
-
-  display: flex !important;
-  flex-direction: row !important;
-
-  justify-content: flex-start !important;
-  align-items: center !important;
-
-  gap: 10px;
-
-  margin-bottom: 20px;
-}
-
-.mode-buttons button {
-  width: auto !important;
-}
-
-
-/* ===================================================== */
-/* MODE EDIT                                              */
-/* ===================================================== */
-
-#editMode {
-  display: none;
-}
-
-#editMode > h3 {
-  margin-top: 20px;
-}
-
-
-/* ===================================================== */
-/* BOUTON SAUVEGARDE                                      */
-/* ===================================================== */
+/* ============================================================
+   BOUTON SAUVEGARDE
+   ============================================================ */
 
 #saveButton {
   margin-bottom: 15px;
 
   background: #3498db;
+
   color: white;
 }
 
@@ -476,22 +331,135 @@ button:hover {
 }
 
 
-/* ===================================================== */
-/* LISTE EDIT                                             */
-/* ===================================================== */
+/* ============================================================
+   RECHERCHE EDIT
+   ============================================================ */
 
-#editList {
+.edit-search {
   width: 100% !important;
 
-  display: block !important;
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: flex-start !important;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  box-sizing: border-box;
+}
+
+.edit-search span {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.edit-search input {
+  width: 100px;
+
+  box-sizing: border-box;
+
+  margin: 0;
+}
+
+.edit-search button {
+  margin-top: 0;
+}
+
+.clear-search-btn {
+  background: #95a5a6;
+
+  color: white;
+}
+
+.clear-search-btn:hover {
+  background: #7f8c8d;
+}
+
+
+/* ============================================================
+   TABLEAU EDIT — ENSEMBLE
+   ============================================================ */
+
+.edit-list-header,
+#editList {
+  width: 100%;
 
   box-sizing: border-box;
 }
 
 
-/* ===================================================== */
-/* LIGNE D'UNE MAISON                                    */
-/* ===================================================== */
+/* ============================================================
+   EN-TÊTE DU TABLEAU
+   ============================================================ */
+
+.edit-list-header {
+  display: grid !important;
+
+  grid-template-columns:
+    90px
+    55px
+    minmax(200px, 1fr)
+    150px
+    150px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  background: #34495e;
+
+  color: white;
+
+  border-radius: 8px 8px 0 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  box-sizing: border-box;
+}
+
+.edit-list-header > div {
+  display: flex !important;
+
+  align-items: center;
+
+  width: auto !important;
+}
+
+
+/* ============================================================
+   ZONE DE DÉFILEMENT
+   ============================================================ */
+
+#editList {
+  display: block !important;
+
+  max-height: 65vh;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  border-radius: 0 0 8px 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   LIGNE D'UNE MAISON
+   ============================================================ */
 
 .edit-house {
   width: 100% !important;
@@ -503,7 +471,7 @@ button:hover {
   grid-template-columns:
     90px
     55px
-    1fr
+    minmax(200px, 1fr)
     150px
     150px;
 
@@ -519,9 +487,9 @@ button:hover {
 }
 
 
-/* ===================================================== */
-/* COULEURS DES GROUPES                                  */
-/* ===================================================== */
+/* ============================================================
+   COULEURS DES GROUPES DE POSITION
+   ============================================================ */
 
 .edit-house-light {
   background: #cfebf1;
@@ -532,19 +500,28 @@ button:hover {
 }
 
 
-/* ===================================================== */
-/* COLONNES                                               */
-/* ===================================================== */
+/* ============================================================
+   COLONNE POSITION
+   ============================================================ */
 
 .edit-position {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+
   font-size: 13px;
+
   font-weight: 600;
 }
 
+
+/* ============================================================
+   COLONNE ID
+   ============================================================ */
+
 .edit-id {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+
   font-size: 14px;
+
   font-weight: 600;
 
   color: #8f0101;
@@ -552,30 +529,68 @@ button:hover {
   text-align: center;
 }
 
+
+/* ============================================================
+   COLONNE NOM
+   ============================================================ */
+
 .edit-name {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+
   font-size: 14px;
+
   font-weight: 600;
 
   text-align: left;
 }
 
 
-/* ===================================================== */
-/* INPUTS PROPRIETAIRES                                  */
-/* ===================================================== */
+/* ============================================================
+   INPUTS PROPRIÉTAIRES
+   ============================================================ */
 
 .edit-owner {
   width: 100% !important;
 
-  box-sizing: border-box;
-
   height: 36px;
+
+  box-sizing: border-box;
 
   padding: 7px;
 
   margin: 0 !important;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+
   font-size: 13px;
+
+  background: white;
+}
+
+.edit-owner::placeholder {
+  color: #777;
+
+  font-style: italic;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  #editList {
+    overflow-x: auto;
+  }
+
+  .edit-list-header,
+  .edit-house {
+    min-width: 700px;
+  }
+
+  .edit-search {
+    flex-wrap: wrap;
+  }
+
 }

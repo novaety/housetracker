@@ -1,71 +1,68 @@
 let houses = [];
+
 window.housesReady = false;
 window.editModeActive = false;
 
+
 // ============================================================
-// 📦 CHARGEMENT DES MAISONS
+// CHARGEMENT DES MAISONS
 // ============================================================
 
 fetch("/api/houses")
-  .then(r => {
-
-    if (!r.ok) {
-      throw new Error("Erreur HTTP " + r.status);
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Erreur HTTP " + response.status);
     }
 
-    return r.json();
-
+    return response.json();
   })
   .then(data => {
+    houses = Array.isArray(data) ? data : [];
 
-    houses = data;
-
-    console.log(
-      "JSON chargé ✔️",
-      houses.length,
-      "maisons"
-    );
+    console.log("JSON chargé ✔️", houses.length, "maisons");
 
     window.housesReady = true;
 
-
-    // Si l'utilisateur est déjà dans Edit
-    // on affiche maintenant les maisons
+    // Si on est actuellement dans le mode Edit,
+    // on affiche les données dès qu'elles sont chargées.
     if (window.editModeActive) {
       renderEditList();
     }
-
   })
   .catch(error => {
+    console.error("❌ Impossible de charger les maisons :", error);
 
-    console.error(
-      "❌ Impossible de charger houses.json :",
-      error
-    );
+    window.housesReady = true;
 
+    const editList = document.getElementById("editList");
+
+    if (editList) {
+      editList.innerHTML =
+        "<p>❌ Impossible de charger les données.</p>";
+    }
   });
 
 
 // ============================================================
-// 🔀 CHANGEMENT DE MODE
+// CHANGEMENT DE MODE TRACKING / EDIT
 // ============================================================
 
 window.setMode = function (mode) {
 
-  const trackingMode =
-    document.getElementById("trackingMode");
+  const trackingMode = document.getElementById("trackingMode");
+  const editMode = document.getElementById("editMode");
 
-  const editMode =
-    document.getElementById("editMode");
+  const trackingButton = document.getElementById("trackingButton");
+  const editButton = document.getElementById("editButton");
 
-  const trackingButton =
-    document.getElementById("trackingButton");
 
-  const editButton =
-    document.getElementById("editButton");
-
+  // ----------------------------------------------------------
+  // MODE TRACKING
+  // ----------------------------------------------------------
 
   if (mode === "tracking") {
+
+    window.editModeActive = false;
 
     trackingMode.style.display = "block";
     editMode.style.display = "none";
@@ -80,7 +77,13 @@ window.setMode = function (mode) {
   }
 
 
+  // ----------------------------------------------------------
+  // MODE EDIT
+  // ----------------------------------------------------------
+
   if (mode === "edit") {
+
+    window.editModeActive = true;
 
     trackingMode.style.display = "none";
     editMode.style.display = "block";
@@ -92,408 +95,454 @@ window.setMode = function (mode) {
     editButton.style.color = "white";
 
     renderEditList();
-
   }
-
 };
 
 
 // ============================================================
-// 🔎 RECHERCHE PAR ID
+// TRACKING - RECHERCHE PAR ID
 // ============================================================
 
 window.searchById = function () {
 
-  const list =
-    document.getElementById("list");
+  const input = document.getElementById("idSearch");
 
-  const details =
-    document.getElementById("details");
+  if (!input) return;
 
+  const value = input.value.trim();
 
-  if (!window.housesReady) {
-
-    list.innerHTML =
-      "Chargement des données...";
-
+  if (value === "") {
+    document.getElementById("list").innerHTML = "";
+    document.getElementById("details").innerHTML = "";
     return;
   }
 
+  const id = Number(value);
 
-  const id =
-    Number(
-      document.getElementById("idSearch").value
-    );
+  const house = houses.find(
+    h => Number(h.id) === id
+  );
 
+  const list = document.getElementById("list");
 
   list.innerHTML = "";
 
-  details.innerHTML = "";
-
-  details.style.display = "none";
-
-
-  const house =
-    houses.find(
-      h => Number(h.id) === id
-    );
-
-
   if (!house) {
-
-    details.innerHTML =
-      "Aucune maison trouvée";
-
-    details.style.display = "block";
-
+    list.innerHTML = "<p>Aucune maison trouvée.</p>";
+    document.getElementById("details").innerHTML = "";
     return;
   }
 
+  const button = document.createElement("button");
 
-  showDetails(house);
+  button.className = "house-btn";
 
+  button.innerHTML = `
+    <span class="house-id">#${String(house.id).padStart(3, "0")}</span>
+    <span class="house-name">${escapeHtml(house.nom ?? "")}</span>
+    <span class="house-owner">
+      ${escapeHtml(house.proprietaire_1 ?? "Libre")}
+    </span>
+  `;
+
+  button.onclick = function () {
+    showDetailsById(house.id);
+  };
+
+  list.appendChild(button);
+
+  showDetailsById(house.id);
 };
 
 
 // ============================================================
-// 📍 RECHERCHE PAR POSITION
+// TRACKING - RECHERCHE PAR POSITION
 // ============================================================
 
 window.searchByPosition = function () {
 
-  const list =
-    document.getElementById("list");
+  const xInput = document.getElementById("xSearch");
+  const yInput = document.getElementById("ySearch");
 
-  const details =
-    document.getElementById("details");
+  const xValue = xInput.value.trim();
+  const yValue = yInput.value.trim();
 
-
-  if (!window.housesReady) {
-
-    list.innerHTML =
-      "Chargement des données...";
-
-    return;
-  }
-
-
-  const xInput =
-    document
-      .getElementById("xSearch")
-      .value
-      .trim();
-
-
-  const yInput =
-    document
-      .getElementById("ySearch")
-      .value
-      .trim();
-
+  const list = document.getElementById("list");
+  const details = document.getElementById("details");
 
   list.innerHTML = "";
-
   details.innerHTML = "";
 
-  details.style.display = "none";
 
-
-  const x = Number(xInput);
-
-  const y = Number(yInput);
-
-
-  if (xInput === "" || yInput === "") {
-
+  if (xValue === "" || yValue === "") {
     list.innerHTML =
-      "Entre une position complète (X et Y)";
-
+      "<p>Veuillez renseigner X et Y.</p>";
     return;
   }
 
 
-  const results =
-    houses.filter(h => {
+  const x = Number(xValue);
+  const y = Number(yValue);
 
-      const [hx, hy] =
-        JSON.parse(h.position);
 
-      return hx === x && hy === y;
+  if (Number.isNaN(x) || Number.isNaN(y)) {
+    list.innerHTML =
+      "<p>Coordonnées invalides.</p>";
+    return;
+  }
 
-    });
+
+  const results = houses.filter(house => {
+
+    const position = parsePosition(house.position);
+
+    if (!position) return false;
+
+    const [houseX, houseY] = position;
+
+    return houseX === x && houseY === y;
+  });
 
 
   if (results.length === 0) {
-
     list.innerHTML =
-      "Aucune maison à cette position";
-
+      "<p>Aucune maison trouvée à cette position.</p>";
     return;
   }
 
 
-  results.forEach(h => {
+  results
+    .sort((a, b) => Number(a.id) - Number(b.id))
+    .forEach(house => {
 
-    const div =
-      document.createElement("div");
+      const button = document.createElement("button");
 
+      button.className = "house-btn";
 
-    div.innerHTML = `
-
-      <button
-        class="house-btn"
-        onclick="showDetailsById(${h.id})"
-      >
+      button.innerHTML = `
+        <span class="house-id">
+          #${String(house.id).padStart(3, "0")}
+        </span>
 
         <span class="house-name">
-          ${h.nom}
+          ${escapeHtml(house.nom ?? "")}
         </span>
 
-        <span class="house-id">
-          <strong>ID = ${h.id}</strong>
+        <span class="house-owner">
+          ${escapeHtml(house.proprietaire_1 ?? "Libre")}
         </span>
+      `;
 
-      </button>
+      button.onclick = function () {
+        showDetailsById(house.id);
+      };
 
-    `;
-
-
-    list.appendChild(div);
-
-  });
-
+      list.appendChild(button);
+    });
 };
 
 
 // ============================================================
-// 👤 RECHERCHE PAR PSEUDO
+// TRACKING - RECHERCHE PAR PSEUDO
 // ============================================================
 
 window.searchByPlayer = function () {
 
-  const query =
-    document
-      .getElementById("playerSearch")
-      .value
-      .toLowerCase();
+  const input = document.getElementById("playerSearch");
 
+  if (!input) return;
 
-  const list =
-    document.getElementById("list");
+  const search = input.value
+    .trim()
+    .toLowerCase();
 
-  const details =
-    document.getElementById("details");
-
+  const list = document.getElementById("list");
 
   list.innerHTML = "";
 
-  details.style.display = "none";
-
-
-  if (query === "") {
+  if (search === "") {
     return;
   }
 
 
-  const results =
-    houses.filter(h => {
+  const results = houses.filter(house => {
 
-      const p1 =
-        (h.proprietaire_1 ?? "")
-          .toLowerCase();
+    const owner1 = String(
+      house.proprietaire_1 ?? ""
+    ).toLowerCase();
 
-
-      const p2 =
-        (h.proprietaire_2 ?? "")
-          .toLowerCase();
+    const owner2 = String(
+      house.proprietaire_2 ?? ""
+    ).toLowerCase();
 
 
-      return (
-        p1.includes(query) ||
-        p2.includes(query)
-      );
-
-    });
+    return (
+      owner1.includes(search) ||
+      owner2.includes(search)
+    );
+  });
 
 
   if (results.length === 0) {
 
     list.innerHTML =
-      "Aucune maison trouvée";
+      "<p>Aucune maison trouvée pour ce joueur.</p>";
 
     return;
   }
 
 
-  results.forEach(h => {
+  results
+    .sort((a, b) => Number(a.id) - Number(b.id))
+    .forEach(house => {
 
-    const div =
-      document.createElement("div");
+      const button = document.createElement("button");
 
+      button.className = "house-btn";
 
-    const ownerText =
-      !h.proprietaire_2
-        ? `<strong>${h.proprietaire_1}</strong>`
-        : "<strong>Double instance</strong>";
-
-
-    div.innerHTML = `
-
-      <button
-        class="house-btn"
-        onclick="showDetailsById(${h.id})"
-      >
+      button.innerHTML = `
+        <span class="house-id">
+          #${String(house.id).padStart(3, "0")}
+        </span>
 
         <span class="house-name">
-          ${h.nom}
+          ${escapeHtml(house.nom ?? "")}
         </span>
 
         <span class="house-owner">
-          <strong>${ownerText}</strong>
+          ${escapeHtml(house.proprietaire_1 ?? "Libre")}
         </span>
+      `;
 
-      </button>
+      button.onclick = function () {
+        showDetailsById(house.id);
+      };
 
-    `;
-
-
-    list.appendChild(div);
-
-  });
-
+      list.appendChild(button);
+    });
 };
 
 
 // ============================================================
-// 📦 AFFICHAGE DETAILS
+// AFFICHAGE DES DETAILS D'UNE MAISON
 // ============================================================
 
 window.showDetailsById = function (id) {
 
-  const house =
-    houses.find(
-      h => Number(h.id) === id
-    );
+  const house = houses.find(
+    h => Number(h.id) === Number(id)
+  );
 
-
-  if (!house) {
-    return;
-  }
-
+  if (!house) return;
 
   showDetails(house);
-
 };
 
 
-// ============================================================
-// 🧾 TEMPLATE DETAILS
-// ============================================================
+window.showDetails = function (house) {
 
-function showDetails(house) {
+  const details = document.getElementById("details");
 
-  const details =
-    document.getElementById("details");
+  if (!details) return;
 
 
-  details.style.display = "block";
+  const position = parsePosition(house.position);
+
+  let x = "";
+  let y = "";
+
+  if (position) {
+    x = position[0];
+    y = position[1];
+  }
 
 
   details.innerHTML = `
-
     <table class="house-details">
 
       <tr>
-        <th>Nom</th>
-        <td>${house.nom}</td>
-      </tr>
-
-      <tr>
         <th>ID</th>
-        <td>${house.id}</td>
+        <td>${escapeHtml(house.id ?? "")}</td>
       </tr>
 
       <tr>
-        <th>Lieu</th>
-        <td>${house.lieu}</td>
+        <th>Nom</th>
+        <td>${escapeHtml(house.nom ?? "")}</td>
       </tr>
 
       <tr>
         <th>Position</th>
-        <td>${house.position}</td>
-      </tr>
-
-      <tr>
-        <th>Prix</th>
-        <td>${house.prix}</td>
-      </tr>
-
-      <tr>
-        <th>Pièces</th>
-        <td>${house.nb_pieces}</td>
-      </tr>
-
-      <tr>
-        <th>Coffres</th>
-        <td>${house.nb_coffres}</td>
-      </tr>
-
-      <tr>
-        <th>Atelier</th>
-        <td>${house.atelier}</td>
-      </tr>
-
-      <tr>
-        <th>Maison guildée</th>
-
-        <td>
-          ${
-            house.guilde === "y"
-              ? "OUI"
-              : house.guilde === "n"
-              ? "NON"
-              : "DOUBLE INSTANCE"
-          }
-        </td>
-
+        <td>[${escapeHtml(x)}, ${escapeHtml(y)}]</td>
       </tr>
 
       <tr>
         <th>Propriétaire 1</th>
-        <td>${house.proprietaire_1}</td>
+        <td>
+          ${escapeHtml(house.proprietaire_1 ?? "Libre")}
+        </td>
       </tr>
 
       <tr>
         <th>Propriétaire 2</th>
-        <td>${house.proprietaire_2 ?? "Aucun"}</td>
+        <td>
+          ${escapeHtml(house.proprietaire_2 ?? "(aucun)")}
+        </td>
       </tr>
 
     </table>
-
   `;
-
-}
+};
 
 
 // ============================================================
-// ✏️ MODE EDIT — AFFICHAGE DE LA LISTE
+// EDIT - RECHERCHE PAR POSITION
 // ============================================================
 
-function renderEditList() {
+window.searchEditPosition = function () {
+
+  const xInput =
+    document.getElementById("editXSearch");
+
+  const yInput =
+    document.getElementById("editYSearch");
+
+
+  const xValue = xInput.value.trim();
+  const yValue = yInput.value.trim();
+
+
+  // Aucun filtre
+  if (xValue === "" && yValue === "") {
+    renderEditList();
+    return;
+  }
+
+
+  const x =
+    xValue !== ""
+      ? Number(xValue)
+      : null;
+
+  const y =
+    yValue !== ""
+      ? Number(yValue)
+      : null;
+
+
+  if (
+    (x !== null && Number.isNaN(x)) ||
+    (y !== null && Number.isNaN(y))
+  ) {
+
+    renderEditList([]);
+
+    return;
+  }
+
+
+  const results = houses.filter(house => {
+
+    const position =
+      parsePosition(house.position);
+
+    if (!position) return false;
+
+
+    const houseX = position[0];
+    const houseY = position[1];
+
+
+    if (x !== null && y !== null) {
+      return (
+        houseX === x &&
+        houseY === y
+      );
+    }
+
+
+    if (x !== null) {
+      return houseX === x;
+    }
+
+
+    if (y !== null) {
+      return houseY === y;
+    }
+
+
+    return true;
+  });
+
+
+  renderEditList(results);
+};
+
+
+// ============================================================
+// EDIT - AFFICHAGE DE L'EN-TETE
+// ============================================================
+
+function ensureEditHeader() {
 
   const editList =
     document.getElementById("editList");
 
+  if (!editList) return;
 
-  if (!editList) {
-    return;
+
+  let header =
+    document.querySelector(".edit-list-header");
+
+
+  if (!header) {
+
+    header =
+      document.createElement("div");
+
+    header.className =
+      "edit-list-header";
+
+
+    header.innerHTML = `
+      <div>Coordonnées</div>
+      <div>ID</div>
+      <div>Nom</div>
+      <div>Propriétaire 1</div>
+      <div>Propriétaire 2</div>
+    `;
+
+
+    editList.parentNode.insertBefore(
+      header,
+      editList
+    );
   }
+}
+
+
+// ============================================================
+// EDIT - AFFICHAGE DE LA LISTE
+// ============================================================
+
+function renderEditList(housesToDisplay = houses) {
+
+  const editList =
+    document.getElementById("editList");
+
+  if (!editList) return;
+
+
+  // Création de l'en-tête si nécessaire
+  ensureEditHeader();
 
 
   editList.innerHTML = "";
 
 
-  // Les données ne sont pas encore chargées
+  // ----------------------------------------------------------
+  // CHARGEMENT
+  // ----------------------------------------------------------
+
   if (!window.housesReady) {
 
     editList.innerHTML =
@@ -503,66 +552,71 @@ function renderEditList() {
   }
 
 
-  // ==========================================================
-  // TRI PAR POSITION PUIS PAR ID
-  // ==========================================================
+  // ----------------------------------------------------------
+  // TRI PAR ID
+  // ----------------------------------------------------------
 
   const sortedHouses =
-    [...houses].sort((a, b) => {
-
-      const [ax, ay] =
-        JSON.parse(a.position);
-
-      const [bx, by] =
-        JSON.parse(b.position);
+    [...housesToDisplay]
+      .sort(
+        (a, b) =>
+          Number(a.id) - Number(b.id)
+      );
 
 
-      if (ax !== bx) {
-        return ax - bx;
-      }
+  // ----------------------------------------------------------
+  // AUCUN RESULTAT
+  // ----------------------------------------------------------
+
+  if (sortedHouses.length === 0) {
+
+    editList.innerHTML =
+      "<p>Aucune maison trouvée.</p>";
+
+    return;
+  }
 
 
-      if (ay !== by) {
-        return ay - by;
-      }
-
-
-      return Number(a.id) - Number(b.id);
-
-    });
-
-
-  // ==========================================================
-  // GROUPES DE POSITION
-  // ==========================================================
+  // ----------------------------------------------------------
+  // COULEURS PAR POSITION
+  // ----------------------------------------------------------
 
   let previousPosition = null;
-
   let colorIndex = 0;
 
 
-  // ==========================================================
-  // CRÉATION DES LIGNES
-  // ==========================================================
+  // ----------------------------------------------------------
+  // CREATION DES LIGNES
+  // ----------------------------------------------------------
 
   sortedHouses.forEach(house => {
 
-    const [x, y] =
-      JSON.parse(house.position);
+    const position =
+      parsePosition(house.position);
+
+
+    if (!position) {
+      return;
+    }
+
+
+    const x = position[0];
+    const y = position[1];
 
 
     const positionKey =
       `${x},${y}`;
 
 
-    // Nouvelle position = changement de couleur
-    if (positionKey !== previousPosition) {
+    if (
+      positionKey !==
+      previousPosition
+    ) {
 
       colorIndex++;
 
       previousPosition =
         positionKey;
-
     }
 
 
@@ -574,7 +628,6 @@ function renderEditList() {
       "edit-house";
 
 
-    // Alternance des couleurs
     if (colorIndex % 2 === 1) {
 
       row.classList.add(
@@ -586,63 +639,199 @@ function renderEditList() {
       row.classList.add(
         "edit-house-dark"
       );
-
     }
 
 
-    // ID avec 3 chiffres
     const paddedId =
-      String(house.id).padStart(3, "0");
+      String(house.id)
+        .padStart(3, "0");
 
 
-    row.innerHTML = `
+    // --------------------------------------------------------
+    // COLONNES
+    // --------------------------------------------------------
 
-      <span class="edit-position">
-        [${x},${y}]
-      </span>
+    const positionElement =
+      document.createElement("span");
 
-      <span class="edit-id">
-        ${paddedId}
-      </span>
+    positionElement.className =
+      "edit-position";
 
-      <span class="edit-name">
-        ${house.nom}
-      </span>
+    positionElement.textContent =
+      `[${x},${y}]`;
 
-      <input
-        class="edit-owner"
-        data-id="${house.id}"
-        data-owner="1"
-        type="text"
-        value="${escapeHtml(
-          house.proprietaire_1 ?? ""
-        )}"
-        placeholder="Proprio 1"
-      >
 
-      <input
-        class="edit-owner"
-        data-id="${house.id}"
-        data-owner="2"
-        type="text"
-        value="${escapeHtml(
-          house.proprietaire_2 ?? ""
-        )}"
-        placeholder="(aucun)"
-      >
+    const idElement =
+      document.createElement("span");
 
-    `;
+    idElement.className =
+      "edit-id";
+
+    idElement.textContent =
+      paddedId;
+
+
+    const nameElement =
+      document.createElement("span");
+
+    nameElement.className =
+      "edit-name";
+
+    nameElement.textContent =
+      house.nom ?? "";
+
+
+    // --------------------------------------------------------
+    // PROPRIETAIRE 1
+    // --------------------------------------------------------
+
+    const owner1 =
+      document.createElement("input");
+
+    owner1.className =
+      "edit-owner";
+
+    owner1.type = "text";
+
+    owner1.dataset.id =
+      house.id;
+
+    owner1.dataset.owner =
+      "1";
+
+    owner1.value =
+      house.proprietaire_1 ?? "";
+
+    owner1.placeholder =
+      "Proprio 1";
+
+
+    // --------------------------------------------------------
+    // PROPRIETAIRE 2
+    // --------------------------------------------------------
+
+    const owner2 =
+      document.createElement("input");
+
+    owner2.className =
+      "edit-owner";
+
+    owner2.type = "text";
+
+    owner2.dataset.id =
+      house.id;
+
+    owner2.dataset.owner =
+      "2";
+
+    owner2.value =
+      house.proprietaire_2 ?? "";
+
+    owner2.placeholder =
+      "(aucun)";
+
+
+    // --------------------------------------------------------
+    // AJOUT DES ELEMENTS
+    // --------------------------------------------------------
+
+    row.appendChild(positionElement);
+    row.appendChild(idElement);
+    row.appendChild(nameElement);
+    row.appendChild(owner1);
+    row.appendChild(owner2);
 
 
     editList.appendChild(row);
-
   });
-
 }
 
 
 // ============================================================
-// 🛡️ PROTECTION DES VALEURS HTML
+// EDIT - EFFACER LA RECHERCHE
+// ============================================================
+
+window.clearEditPositionSearch = function () {
+
+  const xInput =
+    document.getElementById("editXSearch");
+
+  const yInput =
+    document.getElementById("editYSearch");
+
+
+  if (xInput) {
+    xInput.value = "";
+  }
+
+
+  if (yInput) {
+    yInput.value = "";
+  }
+
+
+  renderEditList();
+};
+
+
+// ============================================================
+// UTILITAIRE POSITION
+// ============================================================
+
+function parsePosition(position) {
+
+  try {
+
+    if (Array.isArray(position)) {
+      return position;
+    }
+
+
+    if (typeof position !== "string") {
+      return null;
+    }
+
+
+    const parsed =
+      JSON.parse(position);
+
+
+    if (
+      !Array.isArray(parsed) ||
+      parsed.length < 2
+    ) {
+      return null;
+    }
+
+
+    const x = Number(parsed[0]);
+    const y = Number(parsed[1]);
+
+
+    if (
+      Number.isNaN(x) ||
+      Number.isNaN(y)
+    ) {
+      return null;
+    }
+
+
+    return [x, y];
+
+  } catch (error) {
+
+    console.warn(
+      "Position invalide :",
+      position
+    );
+
+    return null;
+  }
+}
+
+
+// ============================================================
+// UTILITAIRE SECURITE HTML
 // ============================================================
 
 function escapeHtml(value) {
@@ -653,32 +842,28 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
-
 }
 
 
 // ============================================================
-// 💾 SAUVEGARDE DES MODIFICATIONS
+// SAUVEGARDE DES MODIFICATIONS
 // ============================================================
 
 window.saveAllChanges = async function () {
 
   const inputs =
-    document.querySelectorAll(".edit-owner");
+    document.querySelectorAll(
+      ".edit-owner"
+    );
 
 
   const changes = {};
 
 
-  // ==========================================================
-  // RÉCUPÉRATION DES CHANGEMENTS
-  // ==========================================================
-
   inputs.forEach(input => {
 
     const id =
       Number(input.dataset.id);
-
 
     const owner =
       input.dataset.owner;
@@ -689,7 +874,6 @@ window.saveAllChanges = async function () {
       changes[id] = {
         id: id
       };
-
     }
 
 
@@ -697,7 +881,6 @@ window.saveAllChanges = async function () {
 
       changes[id].proprietaire_1 =
         input.value.trim() || null;
-
     }
 
 
@@ -705,7 +888,6 @@ window.saveAllChanges = async function () {
 
       changes[id].proprietaire_2 =
         input.value.trim() || null;
-
     }
 
   });
@@ -714,46 +896,35 @@ window.saveAllChanges = async function () {
   const updates =
     Object.values(changes);
 
-  console.log("📤 DONNÉES ENVOYÉES :", updates);
+
+  console.log(
+    "📤 DONNÉES ENVOYÉES :",
+    updates
+  );
 
 
   if (updates.length === 0) {
-
     return;
   }
 
 
-  // ==========================================================
-  // ENVOI AU SERVEUR
-  // ==========================================================
-
   try {
 
     const response =
-      await fetch("/api/houses", {
+      await fetch(
+        "/api/houses",
+        {
+          method: "PUT",
 
-        method: "PUT",
+          headers: {
+            "Content-Type":
+              "application/json"
+          },
 
-        headers: {
-          "Content-Type": "application/json"
-        },
-
-        /*
-         * IMPORTANT :
-         * ton server.js attend directement un tableau.
-         *
-         * Il attend :
-         * [
-         *   { id: 1, proprietaire_1: "..." }
-         * ]
-         *
-         * et PAS :
-         * { houses: [...] }
-         */
-
-        body: JSON.stringify(updates)
-
-      });
+          body:
+            JSON.stringify(updates)
+        }
+      );
 
 
     if (!response.ok) {
@@ -769,44 +940,43 @@ window.saveAllChanges = async function () {
       throw new Error(
         `Erreur HTTP ${response.status}`
       );
-
     }
 
 
-    // ========================================================
-    // MISE À JOUR DES DONNÉES LOCALES
-    // ========================================================
+    // --------------------------------------------------------
+    // Mise à jour locale
+    // --------------------------------------------------------
 
     updates.forEach(update => {
 
       const house =
         houses.find(
-          h => Number(h.id) === Number(update.id)
+          h =>
+            Number(h.id) ===
+            Number(update.id)
         );
 
 
-      if (!house) {
-        return;
-      }
+      if (!house) return;
 
 
       if (
-        update.proprietaire_1 !== undefined
+        update.proprietaire_1 !==
+        undefined
       ) {
 
         house.proprietaire_1 =
           update.proprietaire_1;
-
       }
 
 
       if (
-        update.proprietaire_2 !== undefined
+        update.proprietaire_2 !==
+        undefined
       ) {
 
         house.proprietaire_2 =
           update.proprietaire_2;
-
       }
 
     });
@@ -817,9 +987,7 @@ window.saveAllChanges = async function () {
     );
 
 
-    // On reconstruit la liste avec les nouvelles valeurs
     renderEditList();
-
 
   } catch (error) {
 
@@ -832,14 +1000,12 @@ window.saveAllChanges = async function () {
     alert(
       "❌ Impossible d'enregistrer les modifications."
     );
-
   }
-
 };
 
 
 // ============================================================
-// 🔎 MODE TRACKING AU DÉMARRAGE
+// INITIALISATION
 // ============================================================
 
 window.addEventListener(

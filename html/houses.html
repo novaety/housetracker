@@ -107,7 +107,34 @@
     >
 
       <h3>Modification des propriétaires</h3>
+      <div class="edit-search">
 
+        <span>Recherche position :</span>
+
+        <input
+          id="editXSearch"
+          type="number"
+          placeholder="X"
+        >
+
+        <input
+          id="editYSearch"
+          type="number"
+          placeholder="Y"
+        >
+
+        <button onclick="searchEditPosition()">
+          🔎 Rechercher
+        </button>
+
+        <button
+          class="clear-search-btn"
+          onclick="clearEditPositionSearch()"
+        >
+          ✖ Tout afficher
+        </button>
+
+      </div>
       <button
         id="saveButton"
         onclick="saveAllChanges()"
