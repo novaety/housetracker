@@ -356,7 +356,26 @@ window.showDetails = function (house) {
     y = position[1];
   }
 
+  let guilde;
+  if (house.guilde === "y") {
+    guilde = "Oui";
+  }
+  else if (house.guilde === "n") {
+    guilde = "Non"
+  }
+  else {
+    guilde = "Double instance"
+  }
 
+  let vente;
+  if (house.vente === "y") {
+    vente = "Oui";
+  }
+
+  else {
+    vente = "Non"
+  }
+  
   details.innerHTML = `
     <table class="house-details">
 
@@ -373,6 +392,21 @@ window.showDetails = function (house) {
       <tr>
         <th>Position</th>
         <td>[${escapeHtml(x)}, ${escapeHtml(y)}]</td>
+      </tr>
+
+      <tr>
+        <th>Prix</th>
+        <td>${escapeHtml(house.prix ?? "")}</td>
+      </tr>
+
+      <tr>
+        <th>Maison guildée</th>
+        <td>${escapeHtml(guilde)}</td>
+      </tr>
+
+      <tr>
+        <th>Maison en vente</th>
+        <td>${escapeHtml(vente)}</td>
       </tr>
 
       <tr>
